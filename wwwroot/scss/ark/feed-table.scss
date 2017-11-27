@@ -7,7 +7,7 @@
 			font-size: $font-size-sm;
 			div {
 				display: block;
-				@extend .text-truncate;
+				@extend .text-truncate; 
 			}
 		}
 	}
