@@ -1,0 +1,48 @@
+.img-raised {
+    @include box-shadow(0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2));
+}
+
+.avatar {
+	max-width: 130px;
+    max-height: 130px;
+    margin: 0 auto;
+    img {
+	    border-radius: 50%;
+    }
+}
+
+.image-container {
+    max-width: 1200px;
+    position: relative;
+    margin-top: 58px;
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+    	margin-right: -15px;
+    	height: 550px;
+    }
+    img {
+	    @include media-breakpoint-down(md) {
+		    left: 0px;
+		    top: 0;
+		    max-width: inherit;
+		    width: 100%;
+		    height: auto;
+		    position: relative;
+		}
+		max-width: 1200px;
+		left: 100px;
+		top: 0;
+		height: 100%;
+		position: absolute;
+    }
+}
+
+.image {
+	display: block;
+	position: relative;
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}

@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Feed Table";
+}
+
+<section class="section">
+	
+	<div class="container-fluid mb-4">
+		<h3>My Feed <a href="">1256</a></h3>
+		<div class="dropdown">
+			<button class="btn btn-secondary btn-sm btn-flat dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Switch List</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Used Cars</a>
+				<a class="dropdown-item" href="#">Spares</a>
+				<a class="dropdown-item" href="#">New Cars</a>
+			</div>
+		</div>
+	</div>
+	
+	<table id="feedTable" class="table table-sm">
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Category</th>
+				<th>Stock #</th>
+				<th>Brand</th>
+				<th>Model</th>
+				<th>Hours</th>
+				<th>Location</th>
+				<th>Year</th>
+				<th>Info</th>
+				<th>Feeds</th>
+				<th>Edit</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><div>521</div></td>
+				<td><div>HINO 57-450 PROFIA (6X4) TRUCK TRACTOR</div></td>
+				<td><div>Truck Tractors</div></td>
+				<td><div>RAVT101</div></td>
+				<td><div>HINO</div></td>
+				<td><div>HINO 57-450 PROFIA (6X4) TRUCK TRACTOR</div></td>
+				<td><div>285000</div></td>
+				<td><div>DURBAN</div></td>
+				<td><div>2007</div></td>
+				<td><div>TO BE SOLD ON PUBLIC TENDER ON 24/08/2017. VISIT www.dunquip.com</div></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+		
+</section>
+
+
+@section Scripts {
+<script src="~/js/jquery.dataTables.min.js"></script>
+<script src="~/js/dataTables.bootstrap4.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $('#feedTable').DataTable(
+		    {
+			    "paging":   true,
+		        "ordering": true,
+		        "info":     true
+		    }
+	    );
+	});
+</script>
+}
+

@@ -1,0 +1,14 @@
+#feedTable {
+	thead {
+		
+	}
+	tbody {
+		td {
+			font-size: $font-size-sm;
+			div {
+				display: block;
+				@extend .text-truncate;
+			}
+		}
+	}
+}

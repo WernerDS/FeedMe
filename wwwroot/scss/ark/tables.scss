@@ -1,0 +1,36 @@
+.table {
+	th {
+		text-transform: uppercase;
+		font-size: $font-size-sm;
+		
+		// Checkboxes
+		.custom-control {
+			top: 4px !important;
+		}
+	}
+	th,
+	td {
+		vertical-align: middle;
+		
+		// Important stuff
+		&.nb {
+			font-weight: $font-weight-bold;
+			color: $gray-700;
+		}
+		
+		// Important with gradient text
+		&.nb-color {
+			font-weight: $font-weight-bold;
+			background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
+			background: linear-gradient(left, $primary-color, $secondary-color);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		
+		// Checkboxes
+		.custom-control {
+			margin: 0;
+			top: 1px;
+		}
+	}
+}

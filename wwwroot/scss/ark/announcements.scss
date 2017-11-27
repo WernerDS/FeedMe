@@ -1,0 +1,25 @@
+.announcement {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    color: #fff;
+    background: rgba(0,0,140,.08);
+    line-height: 26px;
+    margin: 0;
+    padding: 0 5px;
+    font-size: $font-size-sm;
+    border-radius: $border-radius-lg;
+    &:after {
+		content: $fa-var-angle-right;
+		font: normal $font-size-sm Fontawesome;
+		position: relative;
+		margin-left: 5px;
+    }
+    &:hover {
+	    color: #fff;
+		text-decoration: none;
+    }
+    .badge {
+	    margin-right: 5px;
+    }
+}

@@ -1,0 +1,327 @@
+﻿@{
+    ViewData["Title"] = "Search Feed";
+}
+
+<section class="section" id="searchFeed">
+	<div class="container-max px-4">
+		<div class="row mb-4">
+			<div class="col text-center">
+				<h1 class="display-2">Step One:</h1>
+				<div class="search">
+					<input type="text" class="form-control" id="" placeholder="Search Feeds...">
+				</div>
+			</div>
+		</div>
+		
+		<h4 class="text-center">Find your feed</h4>
+		<ul class="list">
+			<li class="bg-primary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">IX</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-secondary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto Mart</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-warning">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Truck and Trailer</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-danger">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto Trader</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-info">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Gumtree</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-dark">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">OLX</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-facebook">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Just sell it</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-google">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Junk Mail</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-dribbble">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">CMH</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-primary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto SLM</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		
+		<h4 class="text-center">Find by industry/category</h4>
+		
+		<div class="industries">
+			<div><a href="">Agriculture and Mining</a></div>
+			<div><a href="">Business Services</a></div>
+			<div><a href="">Computer and Electronics</a></div>
+			<div><a href="">Consumer Services</a></div>
+			<div><a href="">Education</a></div>
+			<div><a href="">Energy and Utilities</a></div>
+			<div><a href="">Financial Services</a></div>
+			<div><a href="">Government</a></div>
+			<div><a href="">Health, Pharmaceuticals, and Biotech</a></div>
+			<div><a href="">Manufacturing</a></div>
+			<div><a href="">Media and Entertainment</a></div>
+			<div><a href="">Non-profit</a></div>
+			<div><a href="">Real Estate and Construction</a></div>
+			<div><a href="">Retail</a></div>
+			<div><a href="">Automobile Dealers</a></div>
+			<div><a href="">Software and Internet</a></div>
+			<div><a href="">Telecommunications</a></div>
+			<div><a href="">Transportation and Storage</a></div>
+			<div><a href="">Travel Recreation and Leisure</a></div>
+			<div><a href="">Wholesale and Distribution</a></div>
+		</div>
+		
+		<div class="text-center">
+			<p class="lead"><a href="">Show all Feeds</a></p>
+			<p class="lead">Couldn't find what you were looking for? <a href="">Suggest a new Feed!</a></p>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="section bg-primary">
+	<div class="container-max px-4">
+		<div class="row mb-4">
+			<div class="col text-center">
+				<h1 class="display-2 text-white">Step Two:</h1>
+			</div>
+		</div>
+		<h4 class="text-center text-white">Type of integration</h4>
+		
+		<div class="wizard-card">
+
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Overwrite all data of Merchant">
+                <input type="radio" name="integrateRadios" id="integrateRadio1" value="option1">
+                <div class="icon">
+                    <i class="fa fa-stack-overflow"></i>
+                    <h6>Overwrite</h6>
+                </div>
+            </div>
+
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Merch with merchant's feed">
+                <input type="radio" name="integrateRadios" id="integrateRadio2" value="option2">
+                <div class="icon">
+                    <i class="fa fa-object-ungroup"></i>
+                    <h6>Merge</h6>
+                </div>
+            </div>
+
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+                <input type="radio" name="integrateRadios" id="integrateRadio3" value="option3">
+                <div class="icon">
+                    <i class="fa fa-random"></i>
+                    <h6>Migrate</h6>
+                </div>
+            </div>
+
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+                <input type="radio" name="integrateRadios" id="integrateRadio4" value="option4">
+                <div class="icon">
+                    <i class="fa fa-plus"></i>
+                    <h6>Add</h6>
+                </div>
+            </div>
+
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+                <input type="radio" name="integrateRadios" id="integrateRadio5" value="option5">
+                <div class="icon">
+                    <i class="fa fa-refresh"></i>
+                    <h6>Update</h6>
+                </div>
+            </div>
+   
+            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+                <input type="radio" name="integrateRadios" id="integrateRadio6" value="option6">
+                <div class="icon">
+                    <i class="fa fa-info"></i>
+                    <h6>Another</h6>
+                </div>
+            </div>
+       
+        </div>
+		
+	</div>
+</section>
+
+
+<section class="section" id="merchantFeed">
+	<div class="container-max px-4">
+		<div class="row mb-4">
+			<div class="col text-center">
+				<h1 class="display-2">Step Three:</h1>
+				<div class="search">
+					<input type="text" class="form-control" id="" placeholder="Search Merchants...">
+				</div>
+			</div>
+		</div>
+		
+		<h4 class="text-center">Find a Merchant</h4>
+		<ul class="list">
+			<li class="bg-primary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">IX</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-secondary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto Mart</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-warning">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Truck and Trailer</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-danger">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto Trader</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-info">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Gumtree</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-dark">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">OLX</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-facebook">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Just sell it</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-google">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Junk Mail</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-dribbble">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">CMH</span>
+					</div>
+				</a>
+			</li>
+			<li class="bg-primary">
+				<a href="">
+					<div>
+						<img src="~/images/feed/feed.png">
+						<span class="feed-name">Auto SLM</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		
+		<div class="text-center">
+			<p class="lead"><a href="">Show all Merchants</a></p>
+			<p class="lead">Couldn't find what you were looking for? <a href="">Suggest a new Merchants!</a></p>
+		</div>
+	</div>
+</section>
+
+
+@section Scripts {
+	<script src="~/js/list.min.js"></script>
+	<script>
+		var options = {
+		  valueNames: [ 'feed-name' ]
+		};
+		var userList = new List('searchFeed', options);
+	</script>
+	<script>
+		var options = {
+		  valueNames: [ 'feed-name' ]
+		};
+		var userList = new List('merchantFeed', options);
+	</script>
+	<script src="~/js/typeahead.jquery.min.js"></script>
+	<script src="~/js/typeahead.config.js"></script>
+	<script>
+		$('[data-toggle="wizard-radio"]').click(function(){
+	        wizard = $(this).closest('.wizard-card');
+	        wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
+	        $(this).addClass('active');
+	        $(wizard).find('[type="radio"]').removeAttr('checked');
+	        $(this).find('[type="radio"]').attr('checked','true');
+	    });
+	</script>
+}

@@ -1,0 +1,184 @@
+$border-radius-round: 	2rem;
+$border-radius-circle: 	50%;
+
+// for social buttons
+@mixin social-buttons-color ($color){
+    background-color: $color;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba($color,0.2), 0 3px 1px -2px rgba($color,0.2), 0 1px 5px 0 rgba($color,0.2);
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $color;
+        color: #fff;
+        box-shadow: 0 14px 26px -12px rgba($color,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba($color,.2);
+    }
+
+    &.btn-simple {
+        color: $color;
+        background-color: transparent;
+        box-shadow: none;
+        @include transition($transition-base);
+        &:focus,
+	    &:active,
+	    &:hover{
+		    background-color: $color;
+			color: #fff;
+		}
+    }
+}
+
+// Shadow
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		//box-shadow: 0 2px 2px 0 rgba($value,0.2), 0 3px 1px -2px rgba($value,0.2), 0 1px 5px 0 rgba($value,0.2);
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: 0 14px 26px -12px rgba($value,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba($value,.2);
+			background-color: $value;
+			//transform: translateY(-1px);
+			//box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+			//transition: $transition-base;
+			border-color: $value;
+		}
+	}
+}
+
+.btn {
+	//border-color: transparent !important;
+	text-transform: uppercase;
+	//font-family: $headings-font-family;
+	will-change: box-shadow,transform;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    border-width: 2px;
+    cursor: pointer;
+    &:active {
+	    box-shadow: none !important;
+    }
+    
+    // Outline
+	&.btn-outline-primary,
+	&.btn-outline-secondary,
+	&.btn-outline-light,
+	&.btn-outline-dark,
+	&.btn-outline-success,
+	&.btn-outline-info,
+	&.btn-outline-warning,
+	&.btn-outline-danger {
+		//border-width: $input-btn-border-width;
+		//border-color: transparent;
+		@include transition($transition-base);
+	}
+	
+	// Float
+	&.float-btn {
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		width: 70px;
+		height: 70px;
+		padding: 0;
+		i {
+			font-size: 35px;
+			line-height: 70px;
+		}
+	}
+	
+	// Rounded
+	&.btn-round {
+		border-radius: $border-radius-round;
+	}
+	
+	// Light
+	&.btn-light {
+		color: $link-color;
+	}
+	
+	// DONT KNOW WHY
+	&.btn-info,
+	&.btn-warning {
+		color: white;
+	}
+	
+	// Square
+	&.btn-square,
+	&.btn-icon-only {
+		padding-left: $input-btn-padding-y;
+		padding-right: $input-btn-padding-y;
+		min-height: 37px;
+		min-width: 37px;
+		&.btn-sm {
+			padding-left: $input-btn-padding-y-sm;
+			padding-right: $input-btn-padding-y-sm;
+			min-height: 34px;
+			min-width: 34px;
+	    }
+	    &.btn-lg {
+		    padding-left: $input-btn-padding-y-lg;
+			padding-right: $input-btn-padding-y-lg;
+			min-height: 41px;
+			min-width: 41px;
+	    }
+	    i {
+		    @extend .fa-fw;
+	    }
+	}
+	
+	// Just Icon
+	&.btn-icon-only {
+	    border-radius: $border-radius-circle;
+	}
+	
+	// Flat
+	&.btn-flat {
+		box-shadow: none !important;
+	}
+	
+	// Social buttons
+    &.btn-facebook {
+    	@include social-buttons-color($social-facebook);
+    }
+    &.btn-twitter {
+    	@include social-buttons-color($social-twitter);
+    }
+    &.btn-pinterest {
+    	@include social-buttons-color($social-pinterest);
+    }
+    &.btn-google {
+    	@include social-buttons-color($social-google);
+    }
+    &.btn-linkedin {
+    	@include social-buttons-color($social-linkedin);
+    }
+    &.btn-dribbble {
+    	@include social-buttons-color($social-dribbble);
+    }
+    &.btn-github {
+    	@include social-buttons-color($social-github);
+    }
+    &.btn-youtube {
+    	@include social-buttons-color($social-youtube);
+    }
+    &.btn-instagram {
+    	@include social-buttons-color($social-instagram);
+    }
+    &.btn-reddit {
+    	@include social-buttons-color($social-reddit);
+    }
+    &.btn-tumblr {
+    	@include social-buttons-color($social-tumblr);
+    }
+    &.btn-behance {
+    	@include social-buttons-color($social-behance);
+    }
+}
+
+
+
+
+
+    
