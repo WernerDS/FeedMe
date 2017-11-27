@@ -33,7 +33,7 @@ $border-radius-circle: 	50%;
 @each $color, $value in $theme-colors {
 	.btn-#{$color} {
 		//box-shadow: 0 2px 2px 0 rgba($value,0.2), 0 3px 1px -2px rgba($value,0.2), 0 1px 5px 0 rgba($value,0.2);
-		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		//box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 		&:hover,
 		&:active,
 		&:focus {

@@ -6,6 +6,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 html, html a, body {
   -webkit-font-smoothing: antialiased;
@@ -116,7 +117,7 @@ html, html a, body {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: "Source Code Pro", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 @media print {
@@ -183,7 +184,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -437,7 +438,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Colfax Black", "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inherit;
   font-weight: 700;
   line-height: 1.2;
   color: inherit; }
@@ -3721,7 +3722,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -3802,7 +3803,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8725,61 +8726,45 @@ a.text-dark:focus, a.text-dark:hover {
   .announcement .badge {
     margin-right: 5px; }
 
-.btn-primary {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    box-shadow: 0 14px 26px -12px rgba(111, 66, 193, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(111, 66, 193, 0.2);
-    background-color: #6f42c1;
-    border-color: #6f42c1; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 14px 26px -12px rgba(111, 66, 193, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(111, 66, 193, 0.2);
+  background-color: #6f42c1;
+  border-color: #6f42c1; }
 
-.btn-secondary {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
-    box-shadow: 0 14px 26px -12px rgba(134, 142, 150, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(134, 142, 150, 0.2);
-    background-color: #868e96;
-    border-color: #868e96; }
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  box-shadow: 0 14px 26px -12px rgba(134, 142, 150, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(134, 142, 150, 0.2);
+  background-color: #868e96;
+  border-color: #868e96; }
 
-.btn-success {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-success:hover, .btn-success:active, .btn-success:focus {
-    box-shadow: 0 14px 26px -12px rgba(40, 167, 69, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(40, 167, 69, 0.2);
-    background-color: #28a745;
-    border-color: #28a745; }
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  box-shadow: 0 14px 26px -12px rgba(40, 167, 69, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(40, 167, 69, 0.2);
+  background-color: #28a745;
+  border-color: #28a745; }
 
-.btn-info {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-info:hover, .btn-info:active, .btn-info:focus {
-    box-shadow: 0 14px 26px -12px rgba(23, 162, 184, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(23, 162, 184, 0.2);
-    background-color: #17a2b8;
-    border-color: #17a2b8; }
+.btn-info:hover, .btn-info:active, .btn-info:focus {
+  box-shadow: 0 14px 26px -12px rgba(23, 162, 184, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(23, 162, 184, 0.2);
+  background-color: #17a2b8;
+  border-color: #17a2b8; }
 
-.btn-warning {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-warning:hover, .btn-warning:active, .btn-warning:focus {
-    box-shadow: 0 14px 26px -12px rgba(255, 193, 7, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 193, 7, 0.2);
-    background-color: #ffc107;
-    border-color: #ffc107; }
+.btn-warning:hover, .btn-warning:active, .btn-warning:focus {
+  box-shadow: 0 14px 26px -12px rgba(255, 193, 7, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 193, 7, 0.2);
+  background-color: #ffc107;
+  border-color: #ffc107; }
 
-.btn-danger {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
-    box-shadow: 0 14px 26px -12px rgba(220, 53, 69, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(220, 53, 69, 0.2);
-    background-color: #dc3545;
-    border-color: #dc3545; }
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+  box-shadow: 0 14px 26px -12px rgba(220, 53, 69, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(220, 53, 69, 0.2);
+  background-color: #dc3545;
+  border-color: #dc3545; }
 
-.btn-light {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-light:hover, .btn-light:active, .btn-light:focus {
-    box-shadow: 0 14px 26px -12px rgba(233, 236, 239, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 236, 239, 0.2);
-    background-color: #e9ecef;
-    border-color: #e9ecef; }
+.btn-light:hover, .btn-light:active, .btn-light:focus {
+  box-shadow: 0 14px 26px -12px rgba(233, 236, 239, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 236, 239, 0.2);
+  background-color: #e9ecef;
+  border-color: #e9ecef; }
 
-.btn-dark {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  .btn-dark:hover, .btn-dark:active, .btn-dark:focus {
-    box-shadow: 0 14px 26px -12px rgba(52, 58, 64, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(52, 58, 64, 0.2);
-    background-color: #343a40;
-    border-color: #343a40; }
+.btn-dark:hover, .btn-dark:active, .btn-dark:focus {
+  box-shadow: 0 14px 26px -12px rgba(52, 58, 64, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(52, 58, 64, 0.2);
+  background-color: #343a40;
+  border-color: #343a40; }
 
 .btn {
   text-transform: uppercase;
@@ -10452,7 +10437,10 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .display-2,
 .display-3,
 .display-4 {
-  font-family: "Colfax Black", "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: "Colfax Black"; }
+
+p {
+  max-width: 635px; }
 
 .frontpage-transfer {
   width: 100%;
@@ -10632,7 +10620,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     background-position-x: 1em;
     background-size: 1em;
     border: 4px solid #e9ecef;
-    font-family: "Colfax Black", "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+    font-family: inherit; }
     #searchFeed .search input[type="text"]:focus,
     #merchantFeed .search input[type="text"]:focus {
       box-shadow: none;
@@ -10778,7 +10766,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
       z-index: -1; }
 
 .myFeeds .status {
-  font-family: "Colfax Black", "Colfax Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: inherit;
   font-size: 0.875rem; }
   .myFeeds .status span {
     float: right; }

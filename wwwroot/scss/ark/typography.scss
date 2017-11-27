@@ -11,5 +11,10 @@ $shout:                       9vw !default;
 .display-2,
 .display-3,
 .display-4 {
-  font-family: $headings-font-family;
+  font-family: "Colfax Black";
+}
+
+
+p {
+	max-width: 635px; 
 }
