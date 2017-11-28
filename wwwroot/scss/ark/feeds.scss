@@ -1,3 +1,18 @@
+#feeds {
+	.nav {
+		&.nav-pills {
+			.nav-link {
+				color: $body-color;
+				&.active {
+					color: $primary;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+
+
 .myFeeds {
 	.status {
 		font-family: $headings-font-family;
