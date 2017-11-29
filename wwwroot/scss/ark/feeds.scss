@@ -64,7 +64,7 @@
 // GRID
 .grid {
     position: relative;
-    min-height: 103px;
+    min-height: 80px;
     max-width: 608px;
     &.grid-sm {
 	    min-height: 45px;
@@ -126,16 +126,6 @@
 				margin-right: 10px;
 			}
 		}
-		&.success {
-			.label {
-				border: 2px solid $success;
-			}
-		}
-		&.error {
-			.label {
-				border: 2px solid $danger;
-			}
-		}
 		
 	    .label {
 			display: block;
@@ -146,6 +136,7 @@
 			transition-duration: .85s;
 			will-change: transform;
 			background: rgba(0,0,0,.05);
+			border: 2px solid;
 		}
 		&:not(.invalid):before {
 		    content: "";
