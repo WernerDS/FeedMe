@@ -16,6 +16,32 @@
 	}
 }
 
+// SEARCH
+.search-input {
+	background-image: url("../images/search-input.svg");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 1em;
+    background-size: 1em;
+    padding-left: 3em;
+}
+
+// LARGE
+.large-input {
+    margin: 0 auto;
+    max-width: 36em;
+    position: relative;
+    input[type="text"] {
+	    padding: 0.5em;
+	    font-size: 1.5em;
+	    border: 4px solid $border-color;
+	    font-family: $headings-font-family;
+	    &:focus {
+		    box-shadow: none;
+		    border-color: $primary;
+	    }
+	}
+}
 
 .form-group {
 	position: relative;

@@ -7,13 +7,19 @@
 		<div class="row mb-4">
 			<div class="col text-center">
 				<h1 class="display-2">Step One:</h1>
-				<div class="search">
-					<input type="text" class="form-control" id="" placeholder="Search Feeds...">
+				<h4 class="text-center">Paste Feed URL</h4>
+				<div class="paste">
+					<input type="text" class="form-control" id="" placeholder="Paste feed URL...">
 				</div>
 			</div>
 		</div>
 		
-		<h4 class="text-center">Find your feed</h4>
+		
+		
+		<h4 class="text-center">OR search your feed</h4>
+		<div class="search mb-3">
+			<input type="text" class="form-control" id="" placeholder="Search Feeds...">
+		</div>
 		<ul class="list">
 			<li class="bg-primary">
 				<a href="">
@@ -123,8 +129,8 @@
 		</div>
 		
 		<div class="text-center">
-			<p class="lead mx-auto"><a href="">Show all Feeds</a></p>
-			<p class="lead mx-auto">Couldn't find what you were looking for? <a href="">Suggest a new Feed!</a></p>
+			<p class="mx-auto"><a href="">Show all Feeds</a></p>
+			<p class="mx-auto">Couldn't find what you were looking for? <a href="">Suggest a new Feed!</a></p>
 		</div>
 	</div>
 </section>
@@ -140,7 +146,7 @@
 		</div>
 		<h4 class="text-center text-white">Type of integration</h4>
 		
-		<div class="wizard-card">
+		<div class="wizard-card mb-4">
 
             <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Overwrite all data of Merchant">
                 <input type="radio" name="integrateRadios" id="integrateRadio1" value="option1">
@@ -192,6 +198,10 @@
        
         </div>
 		
+		<h4 class="text-center text-white">Name your Feed</h4>
+		<div class="large-input">
+			<input type="text" class="form-control" id="" placeholder="Name your feed...">
+		</div>
 	</div>
 </section>
 
@@ -292,11 +302,15 @@
 		</ul>
 		
 		<div class="text-center">
-			<p class="lead mx-auto"><a href="">Show all Merchants</a></p>
-			<p class="lead mx-auto">Couldn't find what you were looking for? <a href="">Suggest a new Merchants!</a></p>
+			<p class="mx-auto"><a href="">Show all Merchants</a></p>
+			<p class="mx-auto">Couldn't find what you were looking for? <a href="">Suggest a new Merchants!</a></p>
 		</div>
 	</div>
 </section>
+
+<div class="text-center my-4">
+	<a href="/feeds" class="btn btn-primary btn-lg">Connect Feed</a>
+</div>
 
 
 @section Scripts {

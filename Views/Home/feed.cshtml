@@ -5,7 +5,7 @@
 <section class="section">
 	
 	<div class="container-fluid mb-4">
-		<h3>My Feed <a href="">1256</a></h3>
+		<h2 class="display-4">IX Feed <a href="">1256</a></h2>
 		<div class="dropdown">
 			<button class="btn btn-secondary btn-sm btn-flat dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Switch List</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -24,27 +24,39 @@
 				<th>Category</th>
 				<th>Stock #</th>
 				<th>Brand</th>
-				<th>Model</th>
-				<th>Hours</th>
 				<th>Location</th>
-				<th>Year</th>
-				<th>Info</th>
 				<th>Feeds</th>
-				<th>Edit</th>
+				<th>&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><div>521</div></td>
-				<td><div>HINO 57-450 PROFIA (6X4) TRUCK TRACTOR</div></td>
+				<td><div>HINO 57-450 PROFIA</div></td>
 				<td><div>Truck Tractors</div></td>
 				<td><div>RAVT101</div></td>
 				<td><div>HINO</div></td>
-				<td><div>HINO 57-450 PROFIA (6X4) TRUCK TRACTOR</div></td>
-				<td><div>285000</div></td>
-				<td><div>DURBAN</div></td>
-				<td><div>2007</div></td>
-				<td><div>TO BE SOLD ON PUBLIC TENDER ON 24/08/2017. VISIT www.dunquip.com</div></td>
+				<td><div>PE</div></td>
+				<td> </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>600</div></td>
+				<td><div>MACNAY DIESEL BROOM</div></td>
+				<td><div>Miscellaneous/Other</div></td>
+				<td><div>TA4</div></td>
+				<td><div>MACNAY</div></td>
+				<td><div>GAUTENG</div></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>672</div></td>
+				<td><div>500 LITRE DIESEL BOWSER FORGEWELD TRAILER</div></td>
+				<td><div>Pre-Owned</div></td>
+				<td><div>SAEP55</div></td>
+				<td><div>FORGEWELD</div></td>
+				<td><div>BOKSBURG</div></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -63,7 +75,18 @@
 		    {
 			    "paging":   true,
 		        "ordering": true,
-		        "info":     true
+		        "info":     true,
+		        "filter":   true,
+		        "aoColumns":   [
+			        { "bSortable": true },
+			        { "bSortable": true },
+			        { "bSortable": true },
+			        { "bSortable": true },
+			        { "bSortable": true },
+			        { "bSortable": true },
+			        { "bSortable": false },
+			        { "bSortable": false }
+		        ]
 		    }
 	    );
 	});

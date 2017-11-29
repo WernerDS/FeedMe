@@ -5,6 +5,15 @@ table.dataTable {
     max-width: none !important;
     //border-collapse: separate !important
 }
+div.dataTables_wrapper {
+	.row:nth-child(2) {
+		.col-sm-12 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
 table.dataTable td,
 table.dataTable th {
     -webkit-box-sizing: content-box;
