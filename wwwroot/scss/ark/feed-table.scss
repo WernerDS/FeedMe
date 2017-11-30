@@ -6,8 +6,8 @@
 		td {
 			font-size: $font-size-sm;
 			div {
-				display: block;
-				@extend .text-truncate; 
+				//display: inline-block;
+				//@extend .text-truncate; 
 			}
 		}
 	}

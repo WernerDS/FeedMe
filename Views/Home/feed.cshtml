@@ -5,13 +5,24 @@
 <section class="section">
 	
 	<div class="container-fluid mb-4">
-		<h2 class="display-4">IX Feed <a href="">1256</a></h2>
-		<div class="dropdown">
-			<button class="btn btn-secondary btn-sm btn-flat dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Switch List</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Used Cars</a>
-				<a class="dropdown-item" href="#">Spares</a>
-				<a class="dropdown-item" href="#">New Cars</a>
+		<div class="d-flex mb-4">
+			<div class="mr-auto">
+				<h2 class="display-4">IX <span class="text-primary">29</span></h2>
+			</div>
+			<div class="align-self-center">
+				<div class="dropdown">
+					<button class="btn btn-secondary btn-sm btn-flat dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Switch List</button>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+						<h6 class="dropdown-header">Stock Items</h6>
+						<a class="dropdown-item" href="#">Used Cars</a>
+						<a class="dropdown-item" href="#">Spares</a>
+						<a class="dropdown-item" href="#">New Cars</a>
+						<h6 class="dropdown-header">Branches</h6>
+						<a class="dropdown-item" href="#">Hatfield</a>
+						<a class="dropdown-item" href="#">Lynnwood</a>
+						<a class="dropdown-item" href="#">Midrand</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -26,38 +37,88 @@
 				<th>Brand</th>
 				<th>Location</th>
 				<th>Feeds</th>
-				<th>&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><div>521</div></td>
 				<td><div>HINO 57-450 PROFIA</div></td>
-				<td><div>Truck Tractors</div></td>
+				<td><div class="badge badge-success">Truck Tractors</div></td>
 				<td><div>RAVT101</div></td>
 				<td><div>HINO</div></td>
 				<td><div>PE</div></td>
-				<td> </td>
 				<td></td>
 			</tr>
 			<tr>
 				<td><div>600</div></td>
-				<td><div>MACNAY DIESEL BROOM</div></td>
+				<td><div class="badge badge-success">MACNAY DIESEL BROOM</div></td>
 				<td><div>Miscellaneous/Other</div></td>
-				<td><div>TA4</div></td>
+				<td><div class="badge badge-success">TA4</div></td>
 				<td><div>MACNAY</div></td>
 				<td><div>GAUTENG</div></td>
-				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td><div>672</div></td>
-				<td><div>500 LITRE DIESEL BOWSER FORGEWELD TRAILER</div></td>
+				<td><div class="badge badge-success">JCB 541-70 LOAD ALL</div></td>
 				<td><div>Pre-Owned</div></td>
-				<td><div>SAEP55</div></td>
+				<td><div>SS01</div></td>
 				<td><div>FORGEWELD</div></td>
+				<td><div>KEMPTON PARK</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>702</div></td>
+				<td><div class="badge badge-success">JCB 540 170 LOAD ALL</div></td>
+				<td><div>Haulers/Tractors with Grid Rollers</div></td>
+				<td><div>SAEP55</div></td>
+				<td><div>MACNAY</div></td>
 				<td><div>BOKSBURG</div></td>
 				<td></td>
+			</tr>
+			<tr>
+				<td><div>716</div></td>
+				<td><div>BELL 1806C PLUS 2 LOADER</div></td>
+				<td><div>Miscellaneous/Other</div></td>
+				<td><div class="badge badge-success">QUY150C</div></td>
+				<td><div>JCB</div></td>
+				<td><div>DURBAN</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>850</div></td>
+				<td><div>DYNAPAC CA280D ROLLER</div></td>
+				<td><div>Cranes</div></td>
+				<td><div>GTMR386</div></td>
+				<td><div class="badge badge-success">BELL</div></td>
+				<td><div>JOHANNESBURG</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>860</div></td>
+				<td><div>MANITOU MT1740 TELESCOPIC HANDLER</div></td>
+				<td><div>Pre-Owned</div></td>
+				<td><div>SBMR0001</div></td>
+				<td><div>DYNAPAC</div></td>
+				<td><div class="badge badge-success">PINETOWN</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>912</div></td>
+				<td><div>KATO KR220H-ll ROUGH TERRAIN CRANE</div></td>
+				<td><div>Telescopic handlers</div></td>
+				<td><div>PV01</div></td>
+				<td><div class="badge badge-success">FORGEWELD</div></td>
+				<td><div>MIDDELBURG</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><div>913</div></td>
+				<td><div class="badge badge-success">KRUPP GMT220 ALL TERRAIN CRANE</div></td>
+				<td><div>Rollers</div></td>
+				<td><div>PR05</div></td>
+				<td><div>KATO</div></td>
+				<td><div class="badge badge-success">JOHANNESBURG</div></td>
 				<td></td>
 			</tr>
 		</tbody>
@@ -73,7 +134,7 @@
 	$(document).ready(function(){
 	    $('#feedTable').DataTable(
 		    {
-			    "paging":   true,
+			    "paging":   false,
 		        "ordering": true,
 		        "info":     true,
 		        "filter":   true,
@@ -84,7 +145,6 @@
 			        { "bSortable": true },
 			        { "bSortable": true },
 			        { "bSortable": true },
-			        { "bSortable": false },
 			        { "bSortable": false }
 		        ]
 		    }

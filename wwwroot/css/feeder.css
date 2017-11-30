@@ -5832,7 +5832,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .text-nowrap {
   white-space: nowrap !important; }
 
-.text-truncate, .wizard-card .choice .icon h6, #feedTable tbody td div {
+.text-truncate, .wizard-card .choice .icon h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -11010,8 +11010,6 @@ p {
 
 #feedTable tbody td {
   font-size: 0.875rem; }
-  #feedTable tbody td div {
-    display: block; }
 
 body {
   padding-top: 68px; }
