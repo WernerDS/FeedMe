@@ -1,0 +1,507 @@
+// colors
+$color-1: #404042; // Ship Gray
+$color-2: #9dc997; // Spring Rain
+$color-3: #ffffff; // White
+$border: $border-color;
+
+// fonts 
+$primary-font: 'Source Sans Pro', sans-serif; 
+
+// Table
+$products-number: 8;
+$products-column-width-mobile: 150px;
+$products-column-width: 310px;
+$features-column-width-mobile: 120px;
+$features-column-width: 210px;
+
+// Mixins
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// border radius
+@mixin border-radius($radius:.25em) {
+  border-radius: $radius;
+}
+
+// antialiasing mode font rendering
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// breakpoints  
+$S:     480px;   
+$M:     768px;     
+$L:     1170px;     
+
+// media queries
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+
+.cd-products-comparison-table {
+
+	&::after {
+		/* never visible - this is used in jQuery to check the current MQ */ 
+		display: none;
+		content: 'mobile';
+	}
+
+	.filter {
+		padding: .6em 1.5em;
+		color: $color-3;
+		background-color: rgba($color-3, 0.2);
+		border-radius: 3px;
+		margin-left: 1em;
+		cursor: not-allowed;
+		@include transition(background-color .3s);
+
+		&.active {
+			cursor: pointer;
+			background-color: $color-2;
+		}
+
+		.no-touch &.active:hover {
+			background-color: rgba($color-2, 0.5);
+		}
+	}
+
+	@include MQ(L) {
+
+		&::after {
+			/* never visible - this is used in jQuery to check the current MQ */ 
+			content: 'desktop';
+		}
+
+		.filter {
+			padding: .6em 2em;
+			margin-left: 1.6em;
+		}
+	}
+}
+
+.cd-products-table {
+	position: relative;
+	overflow: hidden;
+}
+
+.cd-products-table .features {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: $features-column-width-mobile;
+	border-style: solid;
+	border-color: $border;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	background-color: rgba($color-3, 0.2);
+	opacity: .95;
+
+	&::after {
+		/* color gradient on the right of .features -  visible while scrolling inside the .cd-products-table */
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 4px;
+		height: 100%;
+		//@include linear-gradient(to right, rgba(#000, .06), rgba(#000, 0), $fallback: rgba(#000, 0));
+		background: green; 
+		opacity: 0;
+	}
+
+	@include MQ(L) {
+		width: $features-column-width;
+	}
+}
+
+.cd-products-table.scrolling .features::after {
+	opacity: 1;
+}
+
+.cd-products-wrapper {
+	overflow-x: auto;
+	/* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+	-webkit-overflow-scrolling: touch;
+	border-style: solid;
+	border-color: $border;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+}
+
+.cd-products-columns {
+	list-style: none;
+	/* products list wrapper */
+	@include clearfix;
+	width: $products-number*$products-column-width-mobile;
+	margin-left: $features-column-width-mobile;
+
+	@include MQ(L) {
+		width: $products-number*$products-column-width;
+		margin-left: $features-column-width;
+	}
+}
+
+.cd-products-columns .product {
+	position: relative;
+	float: left;
+	width: $products-column-width-mobile;
+	text-align: center;
+	@include transition(opacity .3s, visibility .3s, transform .3s);
+
+	.filtering &:not(.selected) {
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0);
+	}
+
+	.no-product-transition &.selected {
+		@include transition(opacity .3s, visibility .3s);
+	}
+
+	.filtered &:not(.selected) {
+		position: absolute;
+	}
+
+	@include MQ(L) {
+		width: $products-column-width;
+	}
+}
+
+.cd-features-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cd-features-list li {
+	//font-size: 1.4rem;
+	//font-weight: bold;
+	padding: 25px 40px;
+	border-color: $border;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+
+	&.rate {
+		/* rating stars */
+		padding: 21px 0;
+
+		span {
+			display: inline-block;
+			height: 22px;
+			width: 110px;
+			background: url("../images/cd-star.svg");
+			color: transparent;
+		}
+	}
+
+	@include MQ(L) {
+		//font-size: 1.6rem;
+
+		&.rate {
+			padding: 22px 0;
+		}
+	}
+}
+
+.features .cd-features-list li,
+.cd-products-table .features .top-info {
+	/* fixed left column - items */
+	//font-size: 1.2rem;
+	//font-weight: bold;
+	/* set line-height value equal to font-size of text inside product cells */
+	//line-height: 14px;
+	padding: 25px 10px;
+	text-align: left;
+
+	@include MQ(L) {
+		text-transform: uppercase;
+		line-height: 16px;
+		padding: 25px 20px;
+		letter-spacing: 1px;
+	}
+}
+
+.features .cd-features-list li {
+	/* truncate text with dots */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.cd-products-table .top-info {
+	position: relative;
+	height: 177px;
+	width: $products-column-width-mobile;
+	text-align: center;
+	padding: 1.25em 2.5em;
+	border-color: $border;
+	border-style: solid;
+	border-right-width: 1px;
+	@include transition(height .3s);
+	cursor: pointer;
+	background: $color-3;
+
+	&::after {
+		/* color gradient below .top-info -  visible when .top-info is fixed */
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 100%;
+		height: 4px;
+		width: 100%;
+		//@include linear-gradient(to bottom, rgba(#000, .06), rgba(#000, 0), $fallback: rgba(#000, 0));
+		//background: green;
+		opacity: 0;
+	}
+
+	h3 {
+		padding: 1.25em 0 0.625em;
+		//font-weight: bold;
+		//font-size: 1.4rem;
+		font-size: 16px !important;
+	}
+
+	img {
+		display: block;
+		backface-visibility: hidden;
+	}
+
+	h3, img {
+		@include transition(transform 0.3s);
+	}
+
+	.check {
+		position: relative;
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+		margin: 0 auto 1em;
+
+		&::after, &::before {
+			/* used to create the check icon and green circle dot - visible when product is selected */
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: '';
+			height: 100%;
+			width: 100%;
+		}
+
+		&::before {
+			/* green circle dot */
+			border-radius: 50%;
+			border: 1px solid $border;
+			background: $color-3;
+			@include transition(background-color .3s, transform .3s, border-color .3s);
+		}
+		
+		&::after {
+			/* check icon */
+			background: url("../images/cd-check.svg") no-repeat center center;
+			background-size: 24px 24px;
+			opacity: 0;
+			@include transition(opacity .3s);
+		}
+	}
+
+	@include MQ(L) {
+		height: 280px;
+		width: $products-column-width;
+
+		h3 {
+			padding-top: 1.4em;
+			//font-size: 1.6rem;
+		}
+
+		.check {
+			margin-bottom: 1.5em;
+		}
+	}
+}
+
+.cd-products-table .features .top-info {
+	/* models */
+	width: $features-column-width-mobile;
+	cursor: auto;
+	background: $color-3;
+
+	@include MQ(L) {
+		width: $features-column-width;
+	}
+}
+
+.cd-products-table .selected .top-info .check::before {
+	/* green circle dot */
+	background: $color-2;
+	border-color: $color-2;
+	transform: scale(1.5);
+	animation: cd-bounce .3s;
+}
+
+@keyframes cd-bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	60% {
+		transform: scale(1.6);
+	}
+
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+.cd-products-table .selected .top-info .check::after {
+	/* check icon */
+	opacity: 1;
+}
+
+@include MQ(L) {
+	.cd-products-table.top-fixed .cd-products-columns > li,
+	.cd-products-table.top-scrolling .cd-products-columns > li, 
+	.cd-products-table.top-fixed .features,
+	.cd-products-table.top-scrolling .features {
+		padding-top: 160px;
+	}
+
+	.cd-products-table.top-fixed .top-info,
+	.cd-products-table.top-scrolling .top-info {
+		height: 160px;
+		position: fixed;
+		top: 0;
+
+		.no-cssgradients & {
+			border-bottom: 1px solid $border;
+		}
+		
+		&::after {
+			opacity: 1;
+		}
+
+		h3 {
+			transform: translateY(-116px);
+		}
+
+		img {
+			transform: translateY(-62px);
+			transform:  scale(.4);
+		}
+	}
+
+	.cd-products-table.top-scrolling .top-info {
+		position: absolute;
+	}
+}
+
+.cd-table-navigation a {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 15px;
+	transform: translateY(55px);
+	/* replace text with image */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	color: transparent;
+
+	height: 60px;
+	width: 40px;
+	background: rgba($color-1, .8) url('../images/cd-arrow.svg') no-repeat center center;
+	border-radius: 3px;
+	@include transition(background-color .3s, opacity .3s, visibility .3s, transform .3s);
+
+	&.inactive {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&.prev {
+		left: $features-column-width-mobile;
+		right: auto;
+		transform: translateY(55px); 
+		transform: translateX(15px); 
+		transform: rotate(180deg);
+	}
+
+	.no-touch &:hover {
+		background-color: $color-1;
+	}
+
+	@include MQ(L) {
+		transform: translateY(100px);
+
+		&.prev {
+			left: $features-column-width;
+			transform: translateY(100px); 
+			transform: translateX(15px);
+			transform: rotate(180deg);
+		}
+
+		.top-fixed & {
+			position: fixed;
+		}
+		
+		.top-fixed &, .top-scrolling & {
+			transform: translateY(45px);
+		}
+
+		.top-fixed &.prev, .top-scrolling &.prev {
+			transform: translateY(45px);
+			transform: translateX(15px);
+			transform: rotate(180deg);
+		}
+	}
+}
+
+/* -------------------------------- 
+No JS
+-------------------------------- */
+.no-js .actions {
+	display: none;
+}
+.no-js .cd-products-table .top-info {
+	height: 145px;
+
+	@include MQ(L) {
+		height: 248px;
+	}
+}
+.no-js .cd-products-columns .check {
+	display: none;
+}
