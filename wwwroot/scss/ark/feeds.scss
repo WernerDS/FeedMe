@@ -82,6 +82,10 @@
 		    position: relative;
 		    &.integrate {
 			    margin: 0 30px;
+			    height: 50px;
+			    width: 50px;
+			    top: 62%;
+			    left: 52%;
 			}
 			&:not(.invalid):before {
 			    width: 34px;
@@ -113,8 +117,24 @@
 		&.integrate {
 			transform: translate(0px) rotate(0deg);
 			transform-origin: 36px center 0px;
+			height: 50px;
+		    width: 50px;
+		    top: 62%;
+		    left: 52%;
 			.label {
-				//border: 2px solid $primary;
+				@extend .pri-gradient-darker;
+				border-color: $primary;
+				border-radius: $border-radius;
+				border: none;
+			}
+			&:after {
+				background: transparent url("../images/small.png") no-repeat center center;
+				position: absolute;
+				content: "";
+				top:0;
+				left: 0;
+				height: 50px;
+				width: 50px;
 			}
 		}
 		&.merchant {

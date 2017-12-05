@@ -2,6 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+<div class="p-4 bg-light">
+	<h4>Feed Setup</h4>
+	<ul>
+		<li>Dealer (Rivonia Toyota) register on AM (AM id: 203639)</li>
+		<li>Tells AM - Import stock from: IX (IX id: 8616)</li>
+		<li>AM pulls stock details from IX</li>
+		<li>Changes made on IX</li>
+		<li>AM: Uses latest from IX OR Always Import & Overwrite from IX OR Keep changes made on AM and Add IX</li>
+	</ul>
+	<h4>DS/AM Importer:</h4>
+	<ul>
+		<li>Matches (AM id: 203639) with (IX id: 8616)</li>
+		<li>Changes made on IX</li>
+		<li>AM: Uses latest from IX</li>
+		<li>AM: Import & Overwrite from IX</li>
+		<li>AM: Keep AM stock and Add IX</li>
+	</ul>
+	<h4>Feeder:</h4>
+	<ul>
+		<li>IX >>> AM</li>
+		<li>Feed OK: OK</li>
+		<li>Feed Error: What and where</li>
+		<li>Fix error where --></li>
+	</ul>
+</div>
+
 <section class="section">
 	
 	<section class="frontpage-content">

@@ -9191,7 +9191,7 @@ a.text-dark:focus, a.text-dark:hover {
 .pri-gradient-lighter {
   background: linear-gradient(150deg, #6f42c1, #aa8fda); }
 
-.pri-gradient-darker {
+.pri-gradient-darker, .grid .step.integrate .label {
   background: linear-gradient(150deg, #6f42c1, #432776); }
 
 .sec-gradient-lighter {
@@ -10872,7 +10872,11 @@ p {
       display: inline-block;
       position: relative; }
       .grid.grid-sm .step.integrate {
-        margin: 0 30px; }
+        margin: 0 30px;
+        height: 50px;
+        width: 50px;
+        top: 62%;
+        left: 52%; }
       .grid.grid-sm .step:not(.invalid):before {
         width: 34px;
         margin-left: 0;
@@ -10897,7 +10901,23 @@ p {
         margin-left: 10px; }
     .grid .step.integrate {
       transform: translate(0px) rotate(0deg);
-      transform-origin: 36px center 0px; }
+      transform-origin: 36px center 0px;
+      height: 50px;
+      width: 50px;
+      top: 62%;
+      left: 52%; }
+      .grid .step.integrate .label {
+        border-color: #6f42c1;
+        border-radius: 0.25rem;
+        border: none; }
+      .grid .step.integrate:after {
+        background: transparent url("../images/small.png") no-repeat center center;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 50px; }
     .grid .step.merchant {
       transform: translate(202px) rotate(0deg);
       transform-origin: -166px center 0px; }
