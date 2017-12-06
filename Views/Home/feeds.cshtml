@@ -1,12 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Manage Feeds";
+    ViewData["Title"] = "All Feeds";
 }
+
 
 <section id="feeds" class="section">
 	<div class="container-max">
 		<div class="d-flex mb-4">
 			<div class="mr-auto">
-				<h2 class="display-4">My Feeds</h2>
+				<h2 class="display-4">@ViewData["Title"]</h2>
+				<div class="badge badge-pill badge-secondary">List of all feeds</div>
 			</div>
 			<div class="align-self-center">
 				<a href="/add-feed" class="btn btn-primary">Create a feed</a>
@@ -46,7 +48,7 @@
 								<tr>
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
-										<h5><a href="/feed">CMH</a></h5>
+										<h5><a href="/feed">Mascus</a></h5>
 										<div>Created <b>Jan 11, 2017 9:48 am</b></div>
 									</td>
 									<td>
@@ -57,20 +59,20 @@
 											<div class="step integrate">
 												<div class="label"></div>
 											</div>
-											<div class="step merchant invalid" data-toggle="tooltip" data-placement="top" title="Auto SLM">
+											<div class="step merchant invalid" data-toggle="tooltip" data-placement="top" title="Mascus">
 												<div class="label"></div>
 											</div>
 										</div>
 									</td>
 									<td>
-										<h5><a href="/feed">3</a></h5>
+										<h5><a href="/feed">0</a></h5>
 										<div>Changes</div>
 									</td>
-									<td><div class="badge badge-pill badge-danger">Error at 12%</div></td>
+									<td><div class="badge badge-pill badge-secondary">Syncing at 83%</div></td>
 									<td class="text-right">
 										<div class="btn-group">
-										  <a href="/feed" class="btn btn-danger">View Errors</a>
-										  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  <a href="/feed" class="btn btn-secondary">View Feed</a>
+										  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										    <span class="sr-only">Toggle Dropdown</span>
 										  </button>
 										  <div class="dropdown-menu dropdown-menu-right">
@@ -247,7 +249,7 @@
 		</div>
 	</div>
 </section>
-
+<!--
 <section class="section">
 	<div class="container-max">
 		<div class="d-flex mb-4">
@@ -404,3 +406,4 @@
 		<li>Done Time</li>
 	</ul>
 </div>
+-->
