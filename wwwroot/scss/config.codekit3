@@ -87,19 +87,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/ark\/compare.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/ark\/compare.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/ark\/datatables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -278,6 +265,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/ark\/sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/ark\/shuffle.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/ark\/shuffle.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

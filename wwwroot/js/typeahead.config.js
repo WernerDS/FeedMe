@@ -22,7 +22,10 @@ var substringMatcher = function(strs) {
 
 var feeds = ['IX', 'Auto Mart', 'Truck and Trailer', 'Auto Trader', 'Gumtree',
   'OLX', 'Just sell it', 'Free ads SA', 'Junk Mail', 'Locanto', 'Howzit',
-  'Free classified', 'CMH', 'Auto SLM'
+  'Free classified', 'CMH', 'Auto SLM', 'Mascus', 'Toyota', 'Car Find', 'Barloworld', 
+  'Barloworld Commercial', 'Call a Car', 'Imperial Select', 'Vehicle Traders', 'General', 
+  'Hyundai', 'Carshop Hub', 'DealerStockControl', 'Vmg', 'Imperial Auto', 'Auto Fuzion', 
+  'Mascus Exports', 'Dunquip', 'Autoxloo', 'IX Trucks', 'ClearAsset', 'Integra', 'IX New'
 ];
 
 $('#search-feed .typeahead').typeahead({
@@ -34,3 +37,6 @@ $('#search-feed .typeahead').typeahead({
   name: 'feeds',
   source: substringMatcher(feeds)
 });
+
+
+

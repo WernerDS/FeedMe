@@ -14,13 +14,15 @@
 		<div class="row mb-4">
 			<div class="col-md-8">
 				<h2 class="display-4">Hi Morne</h2>
-				<p>Welcome back to your account dashboard. Check out these performance statistics and personalised tips from Feeder.</p>
+				<div class="badge badge-pill badge-secondary">Latest changes and updates</div>
+				<p class="lead mt-4">Welcome back to your account dashboard. Check out these performance statistics and personalised tips from Feeder.</p>
 			</div>
 			<div class="col-md-4 text-right">
 				<a href="/add-feed" class="btn btn-primary"><i class="fa fa-plus"></i> Create Feed</a>
 			</div>
 		</div>
 
+<!--
 		<div class="row mb-4">
 			<div class="col-md-12">
 				<h4>Latest Feed: <a href="/feed">IX</a></h4>
@@ -47,7 +49,7 @@
 					</div>
 				</div>
 				
-				<div class="card mb-4 border-danger d-none">
+				<div class="card mb-4 border-danger">
 					<div class="card-body">
 						
 						<div class="grid mx-auto">
@@ -83,11 +85,18 @@
 			<div class="col">
 				
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item"><a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a></li>
-					<li class="nav-item"><a class="nav-link" id="activity-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false">Activity</a></li>
+					<li class="nav-item"><a class="nav-link ml-4 active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Feed Overview</a></li>
+					<li class="nav-item"><a class="nav-link" id="activity-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false">Feed Activity</a></li>
+					<li class="nav-item"><a class="nav-link" id="activity-tab" data-toggle="tab" href="#errors" role="tab" aria-controls="errors" aria-selected="false">Feed Errors (only if any)</a></li>
 				</ul>
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+						
+						<h4 class="mt-4">Feed Overview</h4>
+						
+						
+					</div>
+					<div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
 						
 						
 						<div class="d-flex my-4">
@@ -117,15 +126,16 @@
 						</div>
 						
 					</div>
-					<div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+					<div class="tab-pane fade" id="errors" role="tabpanel" aria-labelledby="activity-tab">
 						
-						<h4 class="mt-4">Activity Log</h4>
+						<h4 class="mt-4">Error in Feed</h4>
 						
 					</div>
 				</div>
 				
 			</div>
 		</div>
+-->
 		
 	</div>
 </section>

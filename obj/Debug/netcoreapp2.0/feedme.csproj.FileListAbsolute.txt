@@ -22,3 +22,15 @@
 /Users/wernergriesel/Projects/feedme/obj/Debug/netcoreapp2.0/feedme.AssemblyInfo.cs
 /Users/wernergriesel/Projects/feedme/obj/Debug/netcoreapp2.0/feedme.dll
 /Users/wernergriesel/Projects/feedme/obj/Debug/netcoreapp2.0/feedme.pdb
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/app.db
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/feedme.deps.json
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/feedme.runtimeconfig.json
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/feedme.runtimeconfig.dev.json
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/feedme.dll
+/Users/jackie/Documents/Github stuff/FeedMe/bin/Debug/netcoreapp2.0/feedme.pdb
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/feedme.csproj.CoreCompileInputs.cache
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/feedme.AssemblyInfoInputs.cache
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/feedme.AssemblyInfo.cs
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/feedme.dll
+/Users/jackie/Documents/Github stuff/FeedMe/obj/Debug/netcoreapp2.0/feedme.pdb
