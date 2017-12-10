@@ -33,7 +33,7 @@
 	    max-width: 36em;
 	    position: relative;
 	    input[type="text"] {
-		    padding: 0.5em 0.5em 0.3em 3em;
+		    padding: 0.5em 0.5em 0.5em 3em;
 		    font-size: 1.5em;
 		    background-image: url("../images/search.svg");
 		    background-repeat: no-repeat;
@@ -61,10 +61,10 @@
 		    display: flex;
 		    justify-content: center;
 		    align-items: stretch;
-			@include media-breakpoint-up(xs) { flex: 0 0 25%; }
-			@include media-breakpoint-up(sm) { flex: 0 0 16.6666667%; }
-			//@include media-breakpoint-up(md) { flex: 0 0 25%; }
-			@include media-breakpoint-up(lg) { flex: 0 0 10%; }
+			@include media-breakpoint-up(xs) { flex: 0 0 50%; }
+			@include media-breakpoint-up(sm) { flex: 0 0 25%; }
+			@include media-breakpoint-up(md) { flex: 0 0 16.6666667%; }
+			@include media-breakpoint-up(lg) { flex: 0 0 12.5%; }
 			&:before {
 			    content: '';
 			    display: table;
@@ -77,7 +77,10 @@
 			    justify-content: space-around;
 			    align-items: center;
 			    padding: .375em;
+			    margin: .5rem;
+			    background: $white;
 			    text-align: center;
+			    border-radius: $border-radius;
 			    div {
 				    position: relative;
 				    top: -15px;
@@ -92,11 +95,14 @@
 				span {
 				    display: block;
 				    margin-top: .5em;
-				    color: #fff;
+				    color: $body-color;
 				    font-weight: bold;
 				    line-height: 1.1;
 				    position: absolute;
 				    width: 100%;
+				}
+				&:hover {
+					background: $gray-200;
 				}
 			}
 	    }

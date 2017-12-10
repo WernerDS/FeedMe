@@ -1,0 +1,103 @@
+.flow-sidebar {
+    padding: 0 0 2em 25px;
+    .flow-row {
+	    display: inline-block;
+	    text-align: center;
+	    width: 100%;
+	}
+	.flow-detail-steps {
+	    border-left: 2px solid $border-color;
+	    float: left;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    width: 100%;
+	    .detail-step {
+		    margin: 1em 0;
+		    position: relative;
+		    min-height: 30px;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			&:first-child {
+			    margin-top: 0;
+			    top: 0;
+			}
+			&:last-child {
+			    margin-bottom: 0;
+			}
+			
+			.detail-icon { 
+			    float: left;
+			    margin-left: -26px;
+			    position: relative;
+			    background-color: white;
+			    border: 2px solid $border-color;
+			    width: 50px;
+			    height: 50px;
+			    border-radius: 50%;
+			    text-align: center;
+			    &:before {
+				    content: fa-content($fa-var-check-circle);
+					font-family: 'FontAwesome';
+					font-weight: 900;
+					position: absolute;
+					right: 0;
+					top: -4px;
+					color: $success;
+					opacity: 0;
+					height: 14px;
+					width: 14px;
+					background: white;
+					border-radius: 50%;
+			    }
+			    &.check {
+				    border-color: $success; 
+				    &:before {
+					    opacity: 1;
+				    }
+				    img {
+					    opacity: 1;
+				    }
+				    i {
+					    opacity: 1;
+				    }
+			    }
+			    i {
+				    line-height: 50px;
+				    font-size: 25px;
+				    opacity: 0;
+			    }
+			    img {
+				    position: relative;
+				    top: 2px;
+				    height: 40px;
+				    max-width: 40px;
+				    opacity: 0;
+			    }
+			}
+			.detail-info {
+				margin-left: -2px;
+			    padding-left: 3em;
+			    text-align: left;
+			    width: calc(100% + 2px);
+			    .nav {
+				    margin-left: -12px;
+				    .nav-link {
+					    color: $gray-600;
+					    font-weight: bold;
+					    border-radius: $border-radius;
+					    &:hover {
+						    color: $primary;
+					    }
+					    &.active {
+						    background: $gray-100;
+						    color: $body-color;
+					    }
+				    }
+			    }
+			}
+		}
+	}
+}
+

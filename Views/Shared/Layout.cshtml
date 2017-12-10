@@ -19,11 +19,18 @@
         
 </head>
 <body>
+    <main class="main">
+	    @await Html.PartialAsync("Pageload")
+	    @await Html.PartialAsync("Navigation")
+	    <section class="content content--full">
+		    <div class="content__inner">
+	    		@RenderBody()
+		    </div>
+	    </section>
+    </main>
     
-    @await Html.PartialAsync("Navigation")
-	                
-    @RenderBody()
-
+    <div class="query"></div>
+    
     <script src="~/js/jquery-3.2.1.min.js"></script>
 	<script src="~/js/popper.min.js"></script>
 	<script src="~/js/bootstrap.min.js"></script>

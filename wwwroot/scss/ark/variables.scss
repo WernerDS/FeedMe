@@ -1,3 +1,30 @@
+// Common action colors
+$bg-hover: rgba($white, 0.06);
+$bg-highlighted-light: rgba($white, 0.08);
+$bg-highlighted-lightest: rgba($white, 0.02);
+$bg-highlighted-dark: rgba($black, 0.2);
+$bg-highlighted-darkest: rgba($black, 0.96);
+$border-light: rgba($white, 0.125);
+$border-lightest: rgba($white, 0.04);
+$color-inverse: #131313;
+
+// Header
+$header-height: 65px;
+$header-shadow: 0 0 13px rgba($black, 0.22);
+$header-z-index: 1060;
+$header-bg: $white;
+$header-bg-scrolled: $bg-highlighted-darkest;
+
+// Sidebars
+$sidebar-bg: $white;
+$sidebar-hidden-bg: $bg-highlighted-darkest;
+$sidebar-width: 280px;
+$sidebar-z-index: $header-z-index - 1;
+$navigation-link-color: rgba($white, 0.7);
+$navigation-link-active-color: $black;
+$navigation-link-hover-bg: rgba($black, 0.04);
+$navigation-link-active-bg: rgba($black, 0.06);
+
 // Variables for social
 $social-facebook: 			#3b5998;
 $social-twitter: 			#55acee;

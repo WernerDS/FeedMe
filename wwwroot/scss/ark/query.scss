@@ -1,0 +1,21 @@
+.query {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	background: $black;
+	height: 30px;
+	width: 30px;
+	border-radius: 0 $border-radius 0 0;
+	color: $white;
+	text-align: center;
+	&:before {
+		font-weight: bold;
+		line-height: 30px;
+		@include media-breakpoint-up(xs) { content: "xs"; }
+		@include media-breakpoint-up(sm) { content: "sm"; }
+		@include media-breakpoint-up(md) { content: "md"; }
+		@include media-breakpoint-up(lg) { content: "lg"; }
+		@include media-breakpoint-up(xl) { content: "xl"; }
+	}
+}

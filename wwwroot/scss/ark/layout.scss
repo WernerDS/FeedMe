@@ -1,0 +1,114 @@
+
+// MAIN
+.main {
+	position: relative;
+}
+
+// CONTENT
+.content {
+	&:not(.content--boxed):not(.content--full) {
+		@include media-breakpoint-up(xl) {
+			padding: ($header-height + $grid-gutter-width) $grid-gutter-width 0 ($sidebar-width + $grid-gutter-width);
+		}
+		
+		@include media-breakpoint-between(sm, lg) {
+			padding: ($header-height + $grid-gutter-width) $grid-gutter-width 0;
+		}
+		
+		@include media-breakpoint-down(xs) {
+			padding: ($header-height + $grid-gutter-width/2) $grid-gutter-width/2 0;
+		}
+	}
+}
+
+.content--full {
+  @include media-breakpoint-up(sm) {
+    padding: ($header-height + $grid-gutter-width) $grid-gutter-width 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: ($header-height + $grid-gutter-width/2) $grid-gutter-width/2 0;
+  }
+}
+
+.content__inner {
+  margin: auto;
+
+  &:not(.content__inner--sm) {
+    max-width: 1320px;
+  }
+}
+
+.content__inner--sm {
+  max-width: 800px;
+}
+
+
+// SIDEBAR
+@mixin sidebar-toggled() {
+  background-color: $sidebar-hidden-bg;
+  @include transition(transform 300ms, opacity 300ms);
+
+  &:not(.toggled) {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &.toggled {
+    box-shadow: 5px 0 10px rgba($black, 0.25);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@mixin user-inverse() {
+  .user__info {
+    background-color: rgba($white, 0.09);
+
+    &:hover {
+      background-color: rgba($white, 0.1);
+    }
+  }
+}
+
+.sidebar {
+  width: $sidebar-width;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: $sidebar-z-index;
+  background-color: $sidebar-bg;
+  padding: $spacer;
+
+  @include media-breakpoint-up(xl) {
+    &:not(.sidebar--hidden) {
+      top: $header-height;
+      height: calc(100% - #{$header-height});
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    @include sidebar-toggled();
+    @include user-inverse();
+  }
+
+  // Scrollbar position
+  .scrollbar-inner {
+    & > .scroll-element {
+      margin-right: 0;
+    }
+  }
+}
+
+.sidebar--hidden {
+  @include sidebar-toggled();
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  @include user-inverse();
+}
+
+.sidebar__inner {
+  padding: $grid-gutter-width 2rem 0.5rem 2rem;
+}

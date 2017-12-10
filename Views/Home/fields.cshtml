@@ -2,45 +2,40 @@
     ViewData["Title"] = "Match Fields";
 }
 
-
-<section class="section">
-	<div class="container">
+<section class="section pt-0">
+	<div class="container-fluid">
 		<div class="row mb-4">
-			<div class="col-md-8">
+			<div class="col">
 				<h2 class="display-4">@ViewData["Title"]</h2>
-				<div class="badge badge-pill badge-secondary">Lists and matches</div>
-				<p class="lead mt-4">Now let's match the columns in your feed to Mascus' feed.</p>
-			</div>
-			<div class="col-md-4 text-right">
-<!-- 				<a href="/add-feed" class="btn btn-primary"><i class="fa fa-plus"></i> Create Feed</a> -->
+				<p class="lead">Now let's match the columns in your feed to Mascus' feed.</p>
 			</div>
 		</div>
 		
 		<table class="table table-bordered shuffle-table">
 			<thead class="thead-light">
 				<tr>
-					<th>Mascus</th>
+					<th>Mascus<div class="badge badge-secondary float-right">Fields</div></th>
 					<th>Toyota</th>
-					<th>&nbsp;</th>
+					<th>Result</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>DealerProductID<div class="badge badge-pill badge-secondary float-right">521</div></td>
+					<td>DealerProductID<div class="badge badge-secondary float-right">521</div></td>
 					<td>ProductID</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr>
-					<td>Name<div class="badge badge-pill badge-secondary float-right">HINO 57-450 PROFIA (6X4)</div></td>
+					<td>Name<div class="badge badge-secondary float-right">HINO 57-450 PROFIA (6X4)</div></td>
 					<td>
-						<ol data-draggable="target">
+						<ol data-draggable="target" id="thisone">
 							<li data-draggable="item">Name</li>
 						</ol>
 					</td>
-					<td></td>
+					<td><div id="here"></div></td>
 				</tr>
 				<tr>
-					<td>QCategoryName<div class="badge badge-pill badge-secondary float-right">Truck Tractors</div></td>
+					<td>QCategoryName<div class="badge badge-secondary float-right">Truck Tractors</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">CategoryNumber</li>
@@ -49,7 +44,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>InternalStockNumber<div class="badge badge-pill badge-secondary float-right">RAVT101</div></td>
+					<td>InternalStockNumber<div class="badge badge-secondary float-right">RAVT101</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">StockNumber</li>
@@ -58,7 +53,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>Brand<div class="badge badge-pill badge-secondary float-right">HINO</div></td>
+					<td>Brand<div class="badge badge-secondary float-right">HINO</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">Brand</li>
@@ -67,7 +62,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>Model<div class="badge badge-pill badge-secondary float-right">HINO 57-450 PROFIA (6X4)</div></td>
+					<td>Model<div class="badge badge-secondary float-right">HINO 57-450 PROFIA (6X4)</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">ItemModel</li>
@@ -76,7 +71,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>MeterReadoutHours<div class="badge badge-pill badge-secondary float-right">285000</div></td>
+					<td>MeterReadoutHours<div class="badge badge-secondary float-right">285000</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">OdoHours</li>
@@ -85,7 +80,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>Location<div class="badge badge-pill badge-secondary float-right">DURBAN</div></td>
+					<td>Location<div class="badge badge-secondary float-right">DURBAN</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">Location</li>
@@ -94,7 +89,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>YearOfManufacture<div class="badge badge-pill badge-secondary float-right">2007</div></td>
+					<td>YearOfManufacture<div class="badge badge-secondary float-right">2007</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">Year</li>
@@ -103,7 +98,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>AttachmentPath1<div class="badge badge-pill badge-secondary float-right">item/5/ravt101.jpg</div></td>
+					<td>AttachmentPath1<div class="badge badge-secondary float-right">item/5/ravt101.jpg</div></td>
 					<td>
 						<ol data-draggable="target">
 							<li data-draggable="item">Image1</li>
@@ -132,7 +127,9 @@
 			</tfoot>
 		</table>
 		
-		
+		<div class="text-center">
+	    	<a href="#" class="btn btn-primary btn-big mt-2">Commit</a>
+		</div>
 		
 	</div>
 </section>
@@ -141,4 +138,7 @@
 
 @section Scripts {
 	<script src="~/js/shuffle.js"></script>
+	<script>
+		$("#thisone").clone().appendTo("#here");
+	</script>
 }

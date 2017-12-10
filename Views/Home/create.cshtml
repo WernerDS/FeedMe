@@ -1,0 +1,940 @@
+﻿@{
+    ViewData["Title"] = "New Feed Setup";
+    Layout = "~/Views/Shared/LayoutSidebar.cshtml";
+}
+
+<div class="tab-content" id="v-pills-tabContent">
+
+	<section id="startHere" class="tab-pane fade show active" role="tabpanel" aria-labelledby="startHere-tab">
+		<div class="container-max text-center">
+			
+			<div class="display-4">Connect <a href="javascript:void(0)" class="me"><i class="fa fa-plus-circle"></i> my feed</a> with <span class="them">merchant feed</span></div>
+			
+		</div>
+	</section>
+	
+	
+	<section id="searchFeed" class="tab-pane fade" role="tabpanel" aria-labelledby="searchFeed-tab">
+		<div class="container-max px-4">
+			
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToStart"><i class="fa fa-chevron-left"></i> Back</button>
+			
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Choose your services</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 1 of 5</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md text-center mb-2">
+					<div class="paste">
+						<input type="text" class="form-control" id="" placeholder="Paste API URL...">
+					</div>
+				</div>
+				<div class="col-md text-center mb-2">
+					<div class="search mb-3">
+						<input type="text" class="form-control" id="" placeholder="Search Services...">
+					</div>
+				</div>
+			</div>
+			
+			<ul class="list">
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/ix.svg">
+							<span class="feed-name">IX</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/automart.svg">
+							<span class="feed-name">Auto Mart</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Truck and Trailer</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto Trader</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Gumtree</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">OLX</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Just sell it</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Junk Mail</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">CMH</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto SLM</span>
+						</div>
+					</a>
+				</li>
+				
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/mascus.svg">
+							<span class="feed-name">Mascus</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="~/images/feed/toyota.svg">
+							<span class="feed-name">Toyota</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Car Find</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Barloworld</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Barloworld Commercial</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Call a Car</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Imperial Select</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Vehicle Traders</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">General</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/hyundai.svg">
+							<span class="feed-name">Hyundai</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Carshop Hub</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Dealer Stock Control</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Vmg</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Imperial Auto</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto Fuzion</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Mascus Exports</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Dunquip</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Autoxloo</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">IX Trucks</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">ClearAsset</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Integra</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">IX New</span>
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+			
+			
+			
+			<div class="text-center">
+				<p class="mx-auto"><a href="javascript:void(0)">Show all Feeds</a></p>
+				<p class="mx-auto">Couldn't find what you were looking for? <a href="javascript:void(0)">Suggest a new Feed!</a></p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="connectHere" class="tab-pane fade" role="tabpanel" aria-labelledby="connectHere-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToSearch"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Connect to Toyota</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 2 of 5</div>
+					<p class="mx-auto lead mt-4">Connect Toyota to sync stock across services.</p>
+					<h4 class="text-center">API Url</h4>
+					<div class="large-input mb-4">
+						<input type="text" class="form-control" id="" placeholder="https://...">
+					</div>
+					<h4 class="text-center">log in</h4>
+					<div class="large-input mb-4">
+						<input type="text" class="form-control mb-2" id="" placeholder="username...">
+						<input type="text" class="form-control" id="" placeholder="password...">
+					</div>
+					<a href="javascript:void(0)" class="btn btn-primary btn-big mt-2" id="connectThis">Connect</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="merchantFeed" class="tab-pane fade" role="tabpanel" aria-labelledby="merchantFeed-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToConnect"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Connect Toyota with</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 4 of 5</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<div class="search">
+						<input type="text" class="form-control" id="" placeholder="Search Merchants...">
+					</div>
+				</div>
+			</div>
+			
+			<ul class="list">
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/ix.svg">
+							<span class="feed-name">IX</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/automart.svg">
+							<span class="feed-name">Auto Mart</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Truck and Trailer</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto Trader</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Gumtree</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">OLX</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Just sell it</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Junk Mail</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">CMH</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto SLM</span>
+						</div>
+					</a>
+				</li>
+				
+	            <li>
+					<a href="javascript:void(0)" id="mascusFeed">
+						<div>
+							<img src="~/images/feed/mascus.svg">
+							<span class="feed-name">Mascus</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Car Find</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Barloworld</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Barloworld Commercial</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Call a Car</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Imperial Select</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Vehicle Traders</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/hyundai.svg">
+							<span class="feed-name">Hyundai</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Carshop Hub</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Dealer Stock Control</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Vmg</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Imperial Auto</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Auto Fuzion</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Mascus Exports</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Dunquip</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Autoxloo</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">IX Trucks</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">ClearAsset</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">Integra</span>
+						</div>
+					</a>
+				</li>
+	            <li>
+					<a href="javascript:void(0)">
+						<div>
+							<img src="~/images/feed/feed.svg">
+							<span class="feed-name">IX New</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			
+			<h4 class="text-center">Find by industry/category</h4>
+			
+			<div class="industries">
+				<div><a href="">Agriculture and Mining</a></div>
+				<div><a href="">Business Services</a></div>
+				<div><a href="">Computer and Electronics</a></div>
+				<div><a href="">Consumer Services</a></div>
+				<div><a href="">Education</a></div>
+				<div><a href="">Energy and Utilities</a></div>
+				<div><a href="">Financial Services</a></div>
+				<div><a href="">Government</a></div>
+				<div><a href="">Health, Pharmaceuticals, and Biotech</a></div>
+				<div><a href="">Manufacturing</a></div>
+				<div><a href="">Media and Entertainment</a></div>
+				<div><a href="">Non-profit</a></div>
+				<div><a href="">Real Estate and Construction</a></div>
+				<div><a href="">Retail</a></div>
+				<div><a href="">Automobile Dealers</a></div>
+				<div><a href="">Software and Internet</a></div>
+				<div><a href="">Telecommunications</a></div>
+				<div><a href="">Transportation and Storage</a></div>
+				<div><a href="">Travel Recreation and Leisure</a></div>
+				<div><a href="">Wholesale and Distribution</a></div>
+			</div>
+			
+			<div class="text-center">
+				<p class="mx-auto"><a href="">Show all Merchants</a></p>
+				<p class="mx-auto">Couldn't find what you were looking for? <a href="">Suggest a new Merchants!</a></p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="connectMerchant" class="tab-pane fade" role="tabpanel" aria-labelledby="connectMerchant-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToMerchantSearch"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Connect to Mascus</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 2 of 5</div>
+					<p class="mx-auto lead mt-4">Connect Mascus to sync stock across services.</p>
+					<h4 class="text-center">API Url</h4>
+					<div class="large-input mb-4">
+						<input type="text" class="form-control" id="" placeholder="https://...">
+					</div>
+					<h4 class="text-center">log in</h4>
+					<div class="large-input mb-4">
+						<input type="text" class="form-control mb-2" id="" placeholder="username...">
+						<input type="text" class="form-control" id="" placeholder="password...">
+					</div>
+					<a href="javascript:void(0)" class="btn btn-primary btn-big mt-2" id="merchantConnect">Connect</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="integrateHere" class="tab-pane fade" role="tabpanel" aria-labelledby="integrateHere-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToMerchant"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4 text-center">
+				<div class="col">
+					<h1 class="display-4">Mascus to ... Toyota</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 3 of 5</div>
+				</div>
+			</div>
+			
+			
+			<div class="wizard-card mb-4">
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Overwrite all data of Merchant">
+	                <input type="radio" name="integrateRadios" id="integrateRadio1" value="option1">
+	                <div class="icon">
+	                    <i class="fa fa-check"></i>
+	                    <h6>Overwrite</h6>
+	                </div>
+	            </div>
+	
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Merch with merchant's feed">
+	                <input type="radio" name="integrateRadios" id="integrateRadio2" value="option2">
+	                <div class="icon">
+	                    <i class="fa fa-object-ungroup"></i>
+	                    <h6>Merge</h6>
+	                </div>
+	            </div>
+	
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+	                <input type="radio" name="integrateRadios" id="integrateRadio3" value="option3">
+	                <div class="icon">
+	                    <i class="fa fa-random"></i>
+	                    <h6>Migrate</h6>
+	                </div>
+	            </div>
+	
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+	                <input type="radio" name="integrateRadios" id="integrateRadio4" value="option4">
+	                <div class="icon">
+	                    <i class="fa fa-plus"></i>
+	                    <h6>Add</h6>
+	                </div>
+	            </div>
+	
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+	                <input type="radio" name="integrateRadios" id="integrateRadio5" value="option5">
+	                <div class="icon">
+	                    <i class="fa fa-pen-square"></i>
+	                    <h6>Update</h6>
+	                </div>
+	            </div>
+	   
+	            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Another option details">
+	                <input type="radio" name="integrateRadios" id="integrateRadio6" value="option6">
+	                <div class="icon">
+	                    <i class="fa fa-info"></i>
+	                    <h6>Import</h6>
+	                </div>
+	            </div>
+	        </div>
+			
+			<div class="text-center">
+	        	<a href="javascript:void(0)" class="btn btn-primary btn-big mt-2" id="integrateThis">Finalise</a>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section id="reviewhHere" class="tab-pane fade" role="tabpanel" aria-labelledby="reviewhHere-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToIntegrate"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Review and finish</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Step 5 of 5</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md-8 mx-auto text-center">
+					<div class="card mb-4">
+						<div class="card-body">
+							<div class="grid mx-auto">
+								<div class="step customer">
+									<div class="label" data-toggle="tooltip" data-placement="top" title="Mascus">
+										<img src="/images/feed/mascus-badge.svg" class="img-fluid">
+									</div>
+								</div>
+								<div class="step integrate">
+									<div class="label"></div>
+								</div>
+								<div class="step merchant">
+									<div class="label" data-toggle="tooltip" data-placement="top" title="Toyota">
+										<img src="/images/feed/toyota-badge.svg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<h5>Setup was successful!</h5>
+							<div>A Test message was sent to Mascus about <b>16 seconds</b> ago.</div>
+						</div>
+					</div>
+					
+					
+					<a class="btn btn-primary btn-big" href="javascript:void(0)" id="finishThis">Finish</a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="finishHere" class="tab-pane fade" role="tabpanel" aria-labelledby="finishHere-tab">
+		<div class="container-max px-4">
+			<button type="button" class="btn btn-outline-secondary btn-round" id="backToReview"><i class="fa fa-chevron-left"></i> Back</button>
+			<div class="row mb-4">
+				<div class="col text-center">
+					<h1 class="display-4">Woohoo...</h1>
+					<div class="badge badge-pill badge-secondary mx-auto">Setup is done</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md-8 mx-auto text-center">
+					<div class="card mb-4">
+						<div class="card-body">
+							<h3>Ready to turn on your Feed?</h3>
+							<p class="mx-auto">We recommend giving your Feed a name.</p>
+							<div class="grid mx-auto">
+								<div class="step customer">
+									<div class="label" data-toggle="tooltip" data-placement="top" title="Mascus">
+										<img src="/images/feed/mascus-badge.svg" class="img-fluid">
+									</div>
+								</div>
+								<div class="step integrate">
+									<div class="label"></div>
+								</div>
+								<div class="step merchant">
+									<div class="label" data-toggle="tooltip" data-placement="top" title="Toyota">
+										<img src="/images/feed/toyota-badge.svg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="large-input my-4">
+								<input type="text" class="form-control" id="" placeholder="Name your feed...">
+							</div>
+							
+							<div class="switch-toggle-lg">
+								<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+							</div>
+							
+						</div>
+						<div class="card-footer">
+							<div>While on, this service will automagically check your feed</div>
+							<div>We check feeds every <i class="fa fa-clock-o"></i> <b>15 minutes</b>.</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="text-center">
+				<h5>Next Step?</h5>
+				<a href="/fields" class="btn btn-primary">Match Fields <i class="fas fa-chevron-right"></i></a>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+@section Scripts {
+	<script src="~/js/list.min.js"></script>
+	<script>
+		var options = {
+		  valueNames: [ 'feed-name' ]
+		};
+		var userList = new List('searchFeed', options);
+	</script>
+	<script>
+		var options = {
+		  valueNames: [ 'feed-name' ]
+		};
+		var userList = new List('merchantFeed', options);
+	</script>
+	<script src="~/js/typeahead.jquery.min.js"></script>
+	<script src="~/js/typeahead.config.js"></script>
+	<script>
+		$('[data-toggle="wizard-radio"]').click(function(){
+	        wizard = $(this).closest('.wizard-card');
+	        wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
+	        $(this).addClass('active');
+	        $(wizard).find('[type="radio"]').removeAttr('checked');
+	        $(this).find('[type="radio"]').attr('checked','true');
+	    });
+	</script>
+	
+	
+	<script>
+		$('.me').click( function() {
+		    $('#stepTabs a[href="#searchFeed"]').tab('show')
+		});
+		
+		$('#searchFeed a').click( function() {
+		    $('#stepTabs a[href="#connectHere"]').tab('show')
+		});
+		
+		$('#connectThis').click( function() {
+		    $('#stepTabs a[href="#merchantFeed"]').tab('show')
+		    $('#connectHere-tab').removeClass('active')
+		    $('.step-one').addClass('done')
+		    $('.step-one .detail-icon').addClass('check')
+		});
+		
+		$('#merchantFeed a').click( function() {
+		    $('#stepTabs a[href="#connectMerchant"]').tab('show')
+		});
+		
+		$('#merchantConnect').click( function() {
+		    $('#stepTabs a[href="#integrateHere"]').tab('show')
+		    $('#connectMerchant-tab').removeClass('active')
+		    $('.step-two .detail-icon').addClass('check')
+		});
+		
+		$('#integrateThis').click( function() {
+		    $('#stepTabs a[href="#reviewhHere"]').tab('show')
+		});
+		
+		$('#finishThis').click( function() {
+		    $('#stepTabs a[href="#finishHere"]').tab('show')
+		    $('#reviewhHere-tab').removeClass('active')
+		    $('.step-three .detail-icon').addClass('check')
+		    $('.final-step .detail-icon').addClass('check')
+		});
+		
+		$('.feed-ul a').click(function() {
+			$('.merchant-ul a').removeClass('active')
+			$('.integration-ul a').removeClass('active')
+			$('.review-ul a').removeClass('active')
+		});
+		
+		$('.merchant-ul a').click(function() {
+			$('.feed-ul a').removeClass('active')
+			$('.integration-ul a').removeClass('active')
+			$('.review-ul a').removeClass('active')
+		});
+		
+		$('.integration-ul a').click(function() {
+			$('.merchant-ul a').removeClass('active')
+			$('.feed-ul a').removeClass('active')
+			$('.review-ul a').removeClass('active')
+		});
+		
+		$('.review-ul a').click(function() {
+			$('.feed-ul a').removeClass('active')
+			$('.integration-ul a').removeClass('active')
+			$('.merchant-ul a').removeClass('active')
+		});
+		
+		
+		// Back Buttons
+		$('#backToStart').click( function() {
+		    $('#stepTabs a[href="#startHere"]').tab('show')
+		});
+		$('#backToSearch').click( function() {
+		    $('#stepTabs a[href="#searchFeed"]').tab('show')
+		});
+		$('#backToConnect').click( function() {
+		    $('#stepTabs a[href="#connectHere"]').tab('show')
+		    $('#merchantFeed-tab').removeClass('active')
+		});
+		$('#backToMerchantSearch').click( function() {
+		    $('#stepTabs a[href="#merchantFeed"]').tab('show')
+		});
+		$('#backToMerchant').click( function() {
+		    $('#stepTabs a[href="#connectMerchant"]').tab('show')
+		    $('#integrateHere-tab').removeClass('active')
+		});
+		$('#backToIntegrate').click( function() {
+		    $('#stepTabs a[href="#integrateHere"]').tab('show')
+		});
+		$('#backToReview').click( function() {
+		    $('#stepTabs a[href="#reviewhHere"]').tab('show')
+		});
+	</script>
+	
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+}

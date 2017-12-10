@@ -120,8 +120,8 @@
 			transform-origin: 238px center 0px;
 			&:before {
 				left: 100%;
-			    background: linear-gradient($gradient-degree,$success,lighten($success,30%));
-			    margin-left: 10px;
+			    background: linear-gradient($gradient-degree,$primary,lighten($primary,30%));
+			    margin-left: 0;
 			}
 		}
 		&.integrate {
@@ -152,8 +152,8 @@
 			transform-origin: -166px center 0px;
 			&:before {
 				right: 100%;
-				background: linear-gradient($gradient-degree,lighten($success,30%),$success);
-				margin-right: 10px;
+				background: linear-gradient($gradient-degree,lighten($primary,30%),$primary);
+				margin-right: 0;
 			}
 		}
 		
@@ -171,7 +171,7 @@
 		&:not(.invalid):before {
 		    content: "";
 		    position: absolute;
-		    width: 110px;
+		    width: 130px;
 		    height: 8px;
 		    top: calc(50% - 4px);
 		    -webkit-mask: url("../images/arrow.svg");
