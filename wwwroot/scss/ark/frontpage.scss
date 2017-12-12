@@ -16,7 +16,7 @@
 			box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.1);
 			width: 150px;
 			height: 150px;
-			padding: 30px;
+			padding: 20px;
 		}
 		&:before,
 		&:after {
@@ -156,11 +156,11 @@
 }
 .floater:before {
 	left: 0;
-	background-image: linear-gradient(90deg, #fff 0%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(90deg, $body-bg 0%, rgba(0,0,0,0) 100%);
 }
 .floater:after {
 	right: 0;
-	background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, #fff 100%);
+	background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, $body-bg 100%);
 }
 
 @include media-breakpoint-up(md) {
