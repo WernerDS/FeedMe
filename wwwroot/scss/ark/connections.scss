@@ -1,0 +1,95 @@
+.connection {
+	@include clearfix();
+	.connect-from,
+	.connect-to,
+	.connect-how {
+		width: 45px;
+	    height: 45px;
+	    margin: 0;
+	    display: block;
+	    position: relative;
+	    float: left;
+	    text-align: center;
+	    border-radius: $border-radius;
+	    border: $border-width solid $border-color;
+	    background: $white;
+	    img {
+		    width: 40px;
+	    }
+	    i {
+		    line-height: 40px;
+		    font-size: 20px; 
+	    }
+	}
+	.connect-how {
+		margin: 0 40px;
+	}
+	.connect-from,
+	.connect-to {
+		&:before {
+		    content: "";
+		    position: absolute;
+		    width: 40px;
+		    height: 8px;
+		    top: calc(50% - 4px);
+		    -webkit-mask: url("../images/arrow.svg");
+		    mask: url("../images/arrow.svg");
+		    transition-property: opacity,transform;
+		    transition-duration: .5s;
+		    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+		    transition-delay: .3s;
+		    will-change: opacity,transform;
+		}
+	}
+	.connect-from {
+		&:before {
+		    left: 100%;
+			margin-left: 2px;
+		}
+	}
+	.connect-to {
+		&:before {
+		    right: 100%;
+			margin-right: 2px;
+		}
+	}
+	&.active {
+		.connect-from,
+		.connect-to {
+			&:before {
+				background: linear-gradient($gradient-degree,$success,$success);
+				animation: move-arrows .5s linear infinite;
+			}
+		}
+	}
+	&.error {
+		.connect-from,
+		.connect-to {
+			&:before {
+				background: linear-gradient($gradient-degree,$danger,$danger);
+			}
+		}
+	}
+	&.syncing {
+		.connect-from,
+		.connect-to {
+			&:before {
+				background: linear-gradient($gradient-degree,$gray-500,$gray-500);
+				animation: move-arrows .5s linear infinite;
+			}
+		}
+	}
+}
+
+@keyframes move-arrows {
+	to {
+		-webkit-mask-position:11px 0;
+		mask-position:11px 0
+	}
+}
+@keyframes move-arrows-delayed {
+	to {
+		-webkit-mask-position:330px 0;
+		mask-position:330px 0
+	}
+}

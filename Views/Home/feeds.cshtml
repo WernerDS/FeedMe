@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="col-md-2">
 				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active" id="v-pills-recent-tab" data-toggle="pill" href="#v-pills-recent" role="tab" aria-controls="v-pills-recent" aria-selected="true"><i class="fa fa-clock-o"></i> Recent</a>
+					<a class="nav-link active" id="v-pills-recent-tab" data-toggle="pill" href="#v-pills-recent" role="tab" aria-controls="v-pills-recent" aria-selected="true"><i class="fa fa-clock"></i> Recent</a>
 					<a class="nav-link" id="v-pills-syncing-tab" data-toggle="pill" href="#v-pills-syncing" role="tab" aria-controls="v-pills-syncing" aria-selected="false"><i class="fa fa-braille"></i> Syncing</a>
 					<a class="nav-link" id="v-pills-complete-tab" data-toggle="pill" href="#v-pills-complete" role="tab" aria-controls="v-pills-complete" aria-selected="false"><i class="fa fa-check"></i> Active</a>
 				</div>
@@ -48,19 +48,19 @@
 								<tr>
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
-										<h5><a href="/feed">Mascus</a></h5>
+										<h5><a href="/feed">Mascus-Toyota</a></h5>
 										<div>Created <b>Jan 11, 2017 9:48 am</b></div>
 									</td>
 									<td>
-										<div class="grid grid-sm">
-											<div class="step customer invalid" data-toggle="tooltip" data-placement="top" title="McCarthy">
-												<div class="label"></div>
+										<div class="connection syncing">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Mascus">
+												<img src="~/images/feed/mascus-badge.svg">
 											</div>
-											<div class="step integrate">
-												<div class="label"></div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Use Latest">
+												<i class="fa fa-clock"></i>
 											</div>
-											<div class="step merchant invalid" data-toggle="tooltip" data-placement="top" title="Mascus">
-												<div class="label"></div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Toyota">
+												<img src="~/images/feed/toyota-badge.svg">
 											</div>
 										</div>
 									</td>
@@ -85,19 +85,19 @@
 								<tr>
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
-										<h5><a href="/feed">Auto SLM</a></h5>
+										<h5><a href="/feed">Mascus-AutoMart</a></h5>
 										<div>Created <b>Jan 11, 2017 9:48 am</b></div>
 									</td>
 									<td>
-										<div class="grid grid-sm">
-											<div class="step customer" data-toggle="tooltip" data-placement="top" title="McCarthy">
-												<div class="label"></div>
+										<div class="connection error">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Mascus">
+												<img src="~/images/feed/mascus-badge.svg">
 											</div>
-											<div class="step integrate">
-												<div class="label"></div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Always Import - Overwrite">
+												<i class="fa fa-list"></i>
 											</div>
-											<div class="step merchant invalid" data-toggle="tooltip" data-placement="top" title="Auto SLM">
-												<div class="label"></div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+												<img src="~/images/feed/automart-badge.svg">
 											</div>
 										</div>
 									</td>
@@ -122,93 +122,19 @@
 								<tr>
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
-										<h5><a href="/feed">Auto Mart</a></h5>
-										<div>Created <b>Apr 11, 2017 9:48 am</b></div>
-									</td>
-									<td>
-										<div class="grid grid-sm">
-											<div class="step customer" data-toggle="tooltip" data-placement="top" title="McCarthy">
-												<div class="label"></div>
-											</div>
-											<div class="step integrate">
-												<div class="label"></div>
-											</div>
-											<div class="step merchant" data-toggle="tooltip" data-placement="top" title="IX">
-												<div class="label"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<h5><a href="/feed">12</a></h5>
-										<div>Changes</div>
-									</td>
-									<td><div class="badge badge-pill badge-secondary">Syncing at 83%</div></td>
-									<td class="text-right">
-										<div class="btn-group">
-										  <a href="/feed" class="btn btn-secondary">View Feed</a>
-										  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    <span class="sr-only">Toggle Dropdown</span>
-										  </button>
-										  <div class="dropdown-menu dropdown-menu-right">
-										    <a class="dropdown-item" href="#">Disable</a>
-										    <a class="dropdown-item" href="#">Another</a>
-										  </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
-									<td>
-										<h5><a href="/feed">IX</a></h5>
+										<h5><a href="/feed">Toyota-AutoMart</a></h5>
 										<div>Merged <b>May 11, 2017 10:48 am</b></div>
 									</td>
 									<td>
-										<div class="grid grid-sm">
-											<div class="step customer" data-toggle="tooltip" data-placement="top" title="McCarthy">
-												<div class="label"></div>
+										<div class="connection active">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Toyota">
+												<img src="~/images/feed/toyota-badge.svg">
 											</div>
-											<div class="step integrate">
-												<div class="label"></div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Keep Auto Mart changes">
+												<i class="fa fa-tasks"></i>
 											</div>
-											<div class="step merchant" data-toggle="tooltip" data-placement="top" title="Auto Mart">
-												<div class="label"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<h5><a href="/feed">29</a></h5>
-										<div>Changes</div>
-									</td>
-									<td><div class="badge badge-pill badge-success">Feed Active</div></td>
-									<td class="text-right">
-										<div class="btn-group">
-										  <a href="/feed" class="btn btn-secondary">View Feed</a>
-										  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    <span class="sr-only">Toggle Dropdown</span>
-										  </button>
-										  <div class="dropdown-menu dropdown-menu-right">
-										    <a class="dropdown-item" href="#">Disable</a>
-										    <a class="dropdown-item" href="#">Another</a>
-										  </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
-									<td>
-										<h5><a href="/feed">Junk Mail</a></h5>
-										<div>Merged <b>May 11, 2017 10:48 am</b></div>
-									</td>
-									<td>
-										<div class="grid grid-sm">
-											<div class="step customer" data-toggle="tooltip" data-placement="top" title="McCarthy">
-												<div class="label"></div>
-											</div>
-											<div class="step integrate">
-												<div class="label"></div>
-											</div>
-											<div class="step merchant" data-toggle="tooltip" data-placement="top" title="Junk Mail">
-												<div class="label"></div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+												<img src="~/images/feed/automart-badge.svg">
 											</div>
 										</div>
 									</td>
