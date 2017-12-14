@@ -3,9 +3,12 @@
 		&.nav-pills {
 			.nav-link {
 				color: $body-color;
+				&:hover {
+					background: rgba($black,0.04);
+				}
 				&.active {
-					color: $primary;
-					background: transparent;
+					color: $white;
+					background: $primary;
 				}
 			}
 		}
@@ -203,14 +206,16 @@
 .feedsTable {
 	tr {
 		td {
-			.btn-group  { 
+			.btn-group,
+			.hover-show  { 
 				opacity: 0;
 				transition: $transition-fade;
 			}
 		}
 		&:hover {
 			td {
-				.btn-group  {
+				.btn-group,
+				.hover-show  {
 					opacity: 1;
 				}
 			}

@@ -18,47 +18,52 @@
 				<p class="lead mt-4">Welcome back to your account dashboard. Check out these performance statistics and personalised tips from Feeder.</p>
 			</div>
 			<div class="col-md-4 text-right">
-				<a href="/add-feed" class="btn btn-primary"><i class="fa fa-plus"></i> Create Feed</a>
+				<a href="/create-feed" class="btn btn-primary">Create new feed</a>
 			</div>
 		</div>
 
 
 		<div class="row mb-4">
 			<div class="col-md-12">
-				<h4>Latest Feed: <a href="/feed">IX</a></h4>
+				<h4>Latest Feed: <a href="/feeds">Mascus-Toyota</a></h4>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-5">
 				
 				
-				<div class="card mb-4 border-danger">
+				<div class="card mb-4">
 					<div class="card-body">
 						
-						<div class="grid mx-auto">
-							<div class="step customer">
-								<div class="label border-success" data-toggle="tooltip" data-placement="top" title="McCarthy"></div>
+						<div class="connection syncing mx-auto">
+							<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Mascus">
+								<img src="~/images/feed/mascus-badge.svg">
 							</div>
-							<div class="step integrate">
-								<div class="label border-primary" data-toggle="tooltip"></div>
+							<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Use Latest">
+								<i class="fa fa-clock"></i>
 							</div>
-							<div class="step merchant invalid">
-								<div class="label border-danger" data-toggle="tooltip" data-placement="top" title="CMH"></div>
+							<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Toyota">
+								<img src="~/images/feed/toyota-badge.svg">
 							</div>
 						</div>
+						
 					</div>
 					<div class="card-footer">
-						<a href="" class="badge badge-pill badge-danger"><i class="fa fa-exclamation-circle"></i> View Errors</a>
-						<span class="pull-right">Started on <b>20 Nov 2017 10:48 am</b></span>
+						<a href="/feeds" class="badge badge-pill badge-secondary"><i class="fa fa-sync fa-spin"></i> Syncing at 83%</a>
+						<span class="float-right">Created on <b>Dec 13, 2017 9:48 am</b></span>
 					</div>
 				</div>
 				
 			</div>
-			<div class="col-md-3">
-				<h6>Add a new feed</h6>
-				<a href="/add-feed" class="btn btn-light">Add new feed</a>
+			<div class="col-md-2 ml-auto">
+				<h6>Add new Account</h6>
+				<a href="/create-feed" class="btn btn-secondary">Add new account</a>
 			</div>
-			<div class="col-md-3">
-				<h6>View your Feeds</h6>
-				<a href="/feeds" class="btn btn-light">View all feeds</a>
+			<div class="col-md-2">
+				<h6>Add new feed</h6>
+				<a href="/feeds" class="btn btn-secondary">Add new feed</a>
+			</div>
+			<div class="col-md-2">
+				<h6>View all feeds</h6>
+				<a href="/feeds" class="btn btn-secondary">View all feeds</a>
 			</div>
 		</div>
 		

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light py-3 header">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/" alt="Feeder"><img src="~/images/logo.svg" height="50px"></a>
+        <a class="navbar-brand" href="/" alt="Feeder"><img src="~/images/logo.png" height="30px"> Blend</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -8,11 +8,13 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav mr-auto">
 	          <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
-	          <li class="nav-item"><a class="nav-link" href="/create">Setup Connection</a></li>
+	          <li class="nav-item"><a class="nav-link" href="/feeds">Feeds</a></li>
+	          <li class="nav-item"><a class="nav-link" href="/accounts">Accounts</a></li>
+<!--
+	          <li class="nav-item"><a class="nav-link" href="/create">Setup</a></li>
 	          <li class="nav-item"><a class="nav-link" href="/fields">Match Fields</a></li>
-		      <li class="nav-item"><a class="nav-link" href="/feeds">Connected Feeds</a></li>
-		      <li class="nav-item"><a class="nav-link" href="/accounts">Accounts</a></li>
 		      <li class="nav-item"><a class="nav-link" href="/audit">Audit Trail</a></li>
+-->
     	  </ul>
     	  @await Html.PartialAsync("LoginPartial")
   		</div>

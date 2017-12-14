@@ -20,13 +20,7 @@ var substringMatcher = function(strs) {
   };
 };
 
-var feeds = ['IX', 'Auto Mart', 'Truck and Trailer', 'Auto Trader', 'Gumtree',
-  'OLX', 'Just sell it', 'Free ads SA', 'Junk Mail', 'Locanto', 'Howzit',
-  'Free classified', 'CMH', 'Auto SLM', 'Mascus', 'Toyota', 'Car Find', 'Barloworld', 
-  'Barloworld Commercial', 'Call a Car', 'Imperial Select', 'Vehicle Traders', 'General', 
-  'Hyundai', 'Carshop Hub', 'DealerStockControl', 'Vmg', 'Imperial Auto', 'Auto Fuzion', 
-  'Mascus Exports', 'Dunquip', 'Autoxloo', 'IX Trucks', 'ClearAsset', 'Integra', 'IX New'
-];
+var feeds = ['IX', 'Auto Mart', 'Mascus', 'Mascus Exports', 'Toyota', 'IX New', 'IX Trucks', 'Used Cars', 'New Cars', 'Lynnwood', 'Hatfield', 'Demo Cars'];
 
 $('#search-feed .typeahead').typeahead({
   hint: true,

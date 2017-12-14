@@ -11,7 +11,7 @@
 				<div class="badge badge-pill badge-secondary">List of all feeds</div>
 			</div>
 			<div class="align-self-center">
-				<a href="/add-feed" class="btn btn-primary">Create a feed</a>
+				<a href="/create-feed" class="btn btn-primary">New feed</a>
 			</div>
 		</div>
 
@@ -19,12 +19,14 @@
 			<div class="col-md-2">
 				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 					<a class="nav-link active" id="v-pills-recent-tab" data-toggle="pill" href="#v-pills-recent" role="tab" aria-controls="v-pills-recent" aria-selected="true"><i class="fa fa-clock"></i> Recent</a>
-					<a class="nav-link" id="v-pills-syncing-tab" data-toggle="pill" href="#v-pills-syncing" role="tab" aria-controls="v-pills-syncing" aria-selected="false"><i class="fa fa-braille"></i> Syncing</a>
-					<a class="nav-link" id="v-pills-complete-tab" data-toggle="pill" href="#v-pills-complete" role="tab" aria-controls="v-pills-complete" aria-selected="false"><i class="fa fa-check"></i> Active</a>
+					<a class="nav-link" id="v-pills-syncing-tab" data-toggle="pill" href="#v-pills-syncing" role="tab" aria-controls="v-pills-syncing" aria-selected="false"><i class="fa fa-sync"></i> Syncing</a>
+					<a class="nav-link" id="v-pills-error-tab" data-toggle="pill" href="#v-pills-error" role="tab" aria-controls="v-pills-error" aria-selected="false"><i class="fa fa-exclamation-circle"></i> Errors</a>
+					<a class="nav-link" id="v-pills-complete-tab" data-toggle="pill" href="#v-pills-complete" role="tab" aria-controls="v-pills-complete" aria-selected="false"><i class="fa fa-check-circle"></i> Active</a>
 				</div>
 			</div>
 			<div class="col-md-10">
 				
+<!--
 				<div class="d-flex mb-4">
 					<div class="mr-auto">
 						<input type="search" placeholder="Find feeds" class="form-control search-input">
@@ -37,9 +39,10 @@
 						</select>
 					</div>
 				</div>
+-->
 				
 				
-				<div class="tab-content" id="v-pills-tabContent">
+				<div class="tab-content bg-white" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-recent" role="tabpanel" aria-labelledby="v-pills-recent-tab">
 						
 						
@@ -49,7 +52,7 @@
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
 										<h5><a href="/feed">Mascus-Toyota</a></h5>
-										<div>Created <b>Jan 11, 2017 9:48 am</b></div>
+										<div>Created <b>Dec 13, 2017 9:48 am</b></div>
 									</td>
 									<td>
 										<div class="connection syncing">
@@ -68,7 +71,7 @@
 										<h5><a href="/feed">0</a></h5>
 										<div>Changes</div>
 									</td>
-									<td><div class="badge badge-pill badge-secondary">Syncing at 83%</div></td>
+									<td><div class="badge badge-pill badge-secondary d-block"><i class="fa fa-sync fa-spin"></i> Syncing at 83%</div></td>
 									<td class="text-right">
 										<div class="btn-group">
 										  <a href="/feed" class="btn btn-secondary">View Feed</a>
@@ -94,7 +97,7 @@
 												<img src="~/images/feed/mascus-badge.svg">
 											</div>
 											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Always Import - Overwrite">
-												<i class="fa fa-list"></i>
+												<i class="fa fa-copy"></i>
 											</div>
 											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Auto Mart">
 												<img src="~/images/feed/automart-badge.svg">
@@ -105,7 +108,7 @@
 										<h5><a href="/feed">4</a></h5>
 										<div>Changes</div>
 									</td>
-									<td><div class="badge badge-pill badge-danger">Error at 52%</div></td>
+									<td><div class="badge badge-pill badge-danger d-block"><i class="fa fa-exclamation-circle"></i> Error at 52%</div></td>
 									<td class="text-right">
 										<div class="btn-group">
 										  <a href="/feed" class="btn btn-danger">View Errors</a>
@@ -123,7 +126,7 @@
 									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
 									<td>
 										<h5><a href="/feed">Toyota-AutoMart</a></h5>
-										<div>Merged <b>May 11, 2017 10:48 am</b></div>
+										<div>Synced <b>May 11, 2017 10:48 am</b></div>
 									</td>
 									<td>
 										<div class="connection active">
@@ -142,7 +145,51 @@
 										<h5><a href="/feed">2</a></h5>
 										<div>Changes</div>
 									</td>
-									<td><div class="badge badge-pill badge-success">Feed Active</div></td>
+									<td><div class="badge badge-pill badge-success d-block"><i class="fa fa-check-circle"></i> Feed Active</div></td>
+									<td class="text-right">
+										<div class="btn-group">
+										  <a href="/feed" class="btn btn-success">View Feed</a>
+										  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="sr-only">Toggle Dropdown</span>
+										  </button>
+										  <div class="dropdown-menu dropdown-menu-right">
+										    <a class="dropdown-item" href="#">Disable</a>
+										    <a class="dropdown-item" href="#">Another</a>
+										  </div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+					<div class="tab-pane fade" id="v-pills-syncing" role="tabpanel" aria-labelledby="v-pills-syncing-tab">
+						<table class="feedsTable table table-lg table-hover">
+							<tbody>
+								<tr>
+									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
+									<td>
+										<h5><a href="/feed">Mascus-Toyota</a></h5>
+										<div>Created <b>Dec 13, 2017 9:48 am</b></div>
+									</td>
+									<td>
+										<div class="connection syncing">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Mascus">
+												<img src="~/images/feed/mascus-badge.svg">
+											</div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Use Latest">
+												<i class="fa fa-clock"></i>
+											</div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Toyota">
+												<img src="~/images/feed/toyota-badge.svg">
+											</div>
+										</div>
+									</td>
+									<td>
+										<h5><a href="/feed">0</a></h5>
+										<div>Changes</div>
+									</td>
+									<td><div class="badge badge-pill badge-secondary d-block"><i class="fa fa-sync fa-spin"></i> Syncing at 83%</div></td>
 									<td class="text-right">
 										<div class="btn-group">
 										  <a href="/feed" class="btn btn-secondary">View Feed</a>
@@ -158,178 +205,95 @@
 								</tr>
 							</tbody>
 						</table>
-						
 					</div>
-					<div class="tab-pane fade" id="v-pills-syncing" role="tabpanel" aria-labelledby="v-pills-syncing-tab">
-						
-						
-						
+					<div class="tab-pane fade" id="v-pills-error" role="tabpanel" aria-labelledby="v-pills-error-tab">
+						<table class="feedsTable table table-lg table-hover">
+							<tbody>
+								<tr>
+									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
+									<td>
+										<h5><a href="/feed">Mascus-AutoMart</a></h5>
+										<div>Created <b>Jan 11, 2017 9:48 am</b></div>
+									</td>
+									<td>
+										<div class="connection error">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Mascus">
+												<img src="~/images/feed/mascus-badge.svg">
+											</div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Always Import - Overwrite">
+												<i class="fa fa-copy"></i>
+											</div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+												<img src="~/images/feed/automart-badge.svg">
+											</div>
+										</div>
+									</td>
+									<td>
+										<h5><a href="/feed">4</a></h5>
+										<div>Changes</div>
+									</td>
+									<td><div class="badge badge-pill badge-danger d-block"><i class="fa fa-exclamation-circle"></i> Error at 52%</div></td>
+									<td class="text-right">
+										<div class="btn-group">
+										  <a href="/feed" class="btn btn-danger">View Errors</a>
+										  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="sr-only">Toggle Dropdown</span>
+										  </button>
+										  <div class="dropdown-menu dropdown-menu-right">
+										    <a class="dropdown-item" href="#">Disable</a>
+										    <a class="dropdown-item" href="#">Another</a>
+										  </div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<div class="tab-pane fade" id="v-pills-complete" role="tabpanel" aria-labelledby="v-pills-complete-tab">
-						
-					
-						
+						<table class="feedsTable table table-lg table-hover">
+							<tbody>
+								<tr>
+									<td><input class="checkbox" type="checkbox" id="" value="option1"></td>
+									<td>
+										<h5><a href="/feed">Toyota-AutoMart</a></h5>
+										<div>Synced <b>May 11, 2017 10:48 am</b></div>
+									</td>
+									<td>
+										<div class="connection active">
+											<div class="connect-from" data-toggle="tooltip" data-placement="top" title="Toyota">
+												<img src="~/images/feed/toyota-badge.svg">
+											</div>
+											<div class="connect-how" data-toggle="tooltip" data-placement="top" title="Keep Auto Mart changes">
+												<i class="fa fa-tasks"></i>
+											</div>
+											<div class="connect-to" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+												<img src="~/images/feed/automart-badge.svg">
+											</div>
+										</div>
+									</td>
+									<td>
+										<h5><a href="/feed">2</a></h5>
+										<div>Changes</div>
+									</td>
+									<td><div class="badge badge-pill badge-success d-block"><i class="fa fa-check-circle"></i> Feed Active</div></td>
+									<td class="text-right">
+										<div class="btn-group">
+										  <a href="/feed" class="btn btn-success">View Feed</a>
+										  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="sr-only">Toggle Dropdown</span>
+										  </button>
+										  <div class="dropdown-menu dropdown-menu-right">
+										    <a class="dropdown-item" href="#">Disable</a>
+										    <a class="dropdown-item" href="#">Another</a>
+										  </div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--
-<section class="section">
-	<div class="container-max">
-		<div class="d-flex mb-4">
-			<div class="mr-auto">
-				<h2 class="display-4">My Feeds</h2>
-			</div>
-			<div class="align-self-center">
-				<a href="/add-feed" class="btn btn-primary">Create a feed</a>
-			</div>
-		</div>
-		
-		<div class="row myFeeds">
-			
-			<div class="col-md-6">
-				<div class="card mb-4 bg-secondary">
-					<div class="card-body">
-						
-						<ul class="feed-legend mx-auto">
-					        <li>Truck and Trailer</li>
-					        <li>Add</li>
-					        <li>IX</li>
-						</ul>
-						
-						<div class="grid mx-auto">
-							<div class="step customer">
-								<div class="label"></div>
-							</div>
-							<div class="step integrate">
-								<div class="label"></div>
-							</div>
-							<div class="step merchant invalid">
-								<div class="label"></div>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-						</div>
-					</div>
-					<div class="card-footer status text-light">
-						<i class="fa fa-circle text-light"></i> Off
-						<span>Started on <b>24 Nov 2017</b></span>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-6">
-				<div class="card mb-4">
-					<div class="card-body">
-						
-						<ul class="feed-legend mx-auto">
-					        <li>Auto Mart</li>
-					        <li>Merge</li>
-					        <li>IX</li>
-						</ul>
-						
-						<div class="grid mx-auto">
-							<div class="step customer">
-								<div class="label"></div>
-							</div>
-							<div class="step integrate">
-								<div class="label"></div>
-							</div>
-							<div class="step merchant">
-								<div class="label"></div>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-						</div>
-					</div>
-					<div class="card-footer status text-dark">
-						<i class="fa fa-circle text-success"></i> Active
-						<span>Merged on <b>20 Nov 2017</b></span>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-6">
-				<div class="card mb-4">
-					<div class="card-body">
-						
-						<ul class="feed-legend mx-auto">
-					        <li>Gumtree</li>
-					        <li>Added</li>
-					        <li>IX</li>
-						</ul>
-						
-						<div class="grid mx-auto">
-							<div class="step customer">
-								<div class="label"></div>
-							</div>
-							<div class="step integrate">
-								<div class="label"></div>
-							</div>
-							<div class="step merchant">
-								<div class="label"></div>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-						</div>
-					</div>
-					<div class="card-footer status text-dark">
-						<i class="fa fa-circle text-success"></i> Active
-						<span>Added on <b>23 Nov 2017</b></span>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-6">
-				<div class="card mb-4">
-					<div class="card-body">
-						
-						<ul class="feed-legend mx-auto">
-					        <li>Junk Mail</li>
-					        <li>Added</li>
-					        <li>IX</li>
-						</ul>
-						
-						<div class="grid mx-auto">
-							<div class="step customer">
-								<div class="label"></div>
-							</div>
-							<div class="step integrate">
-								<div class="label"></div>
-							</div>
-							<div class="step merchant">
-								<div class="label"></div>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-						</div>
-					</div>
-					<div class="card-footer status text-dark">
-						<i class="fa fa-circle text-success"></i> Active
-						<span>Added on <b>23 Nov 2017</b></span>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
-	</div>
-</section>
-
-
-<div class="p-4 bg-light">
-	<h4>A Feed</h4>
-	<ul>
-		<li>My Feed - Integration - Merchant</li>
-		<li>Progress</li>
-		<li>Start Time</li>
-		<li>Done Time</li>
-	</ul>
-</div>
--->

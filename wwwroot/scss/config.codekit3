@@ -451,6 +451,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/blend.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Users\/wernergriesel\/Projects\/feedme\/wwwroot\/css\/blend.css",
+		"oF": 6,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/bootstrap\/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1501,19 +1514,6 @@
 		"oA": 1,
 		"oAP": "\/colfax.css",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/feeder.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/Users\/wernergriesel\/Projects\/feedme\/wwwroot\/css\/feeder.css",
-		"oF": 6,
 		"oS": 0,
 		"uL": 1
 		},

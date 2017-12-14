@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+  <dealer>
+    <DealerID>521</DealerID>
+    <Name>HINO</Name>
+    <Location>DURBAN</Location>
+    <DateCreated>2007</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>533</DealerID>
+    <Name>KOBELCO</Name>
+    <Location>CAPE TOWN</Location>
+    <DateCreated>2006</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>534</DealerID>
+    <Name>FUSHAN</Name>
+    <Location>CAPE TOWN</Location>
+    <DateCreated>2008</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>535</DealerID>
+    <Name>POTAIN</Name>
+    <Location>CAPE TOWN</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>536</DealerID>
+    <Name>TADANO</Name>
+    <Location>KEMPTON PARK</Location>
+    <DateCreated>1999</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>560</DealerID>
+    <Name>6M3 READYMIX DRUM ON SUB FRAME</Name>
+    <Location>OLIFANTSFONTEIN</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>593</DealerID>
+    <Name>VOGELE</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>1998</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>595</DealerID>
+    <Name>SCHEID</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>599</DealerID>
+    <Name>MACNAY</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>600</DealerID>
+    <Name>MACNAY</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>601</DealerID>
+    <Name>MACNAY</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>603</DealerID>
+    <Name>JCB</Name>
+    <Location>KEMPTON PARK</Location>
+    <DateCreated>2015</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>604</DealerID>
+    <Name>JCB</Name>
+    <Location>KEMPTON PARK</Location>
+    <DateCreated>2016</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>605</DealerID>
+    <Name>BELL</Name>
+    <Location>KEMPTON PARK</Location>
+    <DateCreated>2006</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>613</DealerID>
+    <Name>DYNAPAC</Name>
+    <Location>KEMPTON PARK</Location>
+    <DateCreated>2011</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>689</DealerID>
+    <Name>MANITOU</Name>
+    <Location>JOHANNESBURG</Location>
+    <DateCreated>2005</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>672</DealerID>
+    <Name>500 LITRE DIESEL BOWSER FORGEWELD TRAILER</Name>
+    <Location>BOKSBURG</Location>
+  </dealer>
+  <dealer>
+    <DealerID>673</DealerID>
+    <Name>KATO KR220H-ll ROUGH TERRAIN CRANE </Name>
+    <Location>JOHANNESBURG</Location>
+    <DateCreated>2007</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>674</DealerID>
+    <Name>KATO KR220H-ll ROUGH TERRAIN CRANE </Name>
+    <Location>JOHANNESBURG</Location>
+    <DateCreated>2007</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>675</DealerID>
+    <Name>KRUPP GMT220 ALL TERRAIN CRANE</Name>
+    <Location>JOHANNESBURG</Location>
+    <DateCreated>1989</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>676</DealerID>
+    <Name>BOBCAT</Name>
+    <Location>MIDDELBURG</Location>
+    <DateCreated>2004</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>677</DealerID>
+    <Name>BOBCAT</Name>
+    <Location>MIDDELBURG</Location>
+    <DateCreated>2001</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>686</DealerID>
+    <Name>STA GROUT PLANT</Name>
+    <Location>GAUTENG</Location>
+    <DateCreated>2014</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>688</DealerID>
+    <Name>BELL</Name>
+    <Location>PINETOWN</Location>
+    <DateCreated>2014</DateCreated>
+  </dealer>
+  <dealer>
+    <DealerID>690</DealerID>
+    <Name>LANGFORD</Name>
+    <Location>DURBAN</Location>
+    <DateCreated>2014</DateCreated>
+  </dealer>
+</root>

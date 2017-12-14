@@ -1,5 +1,6 @@
 .connection {
 	@include clearfix();
+	max-width: 220px;
 	.connect-from,
 	.connect-to,
 	.connect-how {
@@ -55,7 +56,9 @@
 	}
 	&.active {
 		.connect-from,
-		.connect-to {
+		.connect-to,
+		.connect-how {
+			//border-color: $success;
 			&:before {
 				background: linear-gradient($gradient-degree,$success,$success);
 				animation: move-arrows .5s linear infinite;
@@ -64,7 +67,9 @@
 	}
 	&.error {
 		.connect-from,
-		.connect-to {
+		.connect-to,
+		.connect-how {
+			//border-color: $danger;
 			&:before {
 				background: linear-gradient($gradient-degree,$danger,$danger);
 			}
@@ -74,9 +79,34 @@
 		.connect-from,
 		.connect-to {
 			&:before {
-				background: linear-gradient($gradient-degree,$gray-500,$gray-500);
+				background: linear-gradient($gradient-degree,$gray-400,$gray-400);
 				animation: move-arrows .5s linear infinite;
 			}
+		}
+	}
+	
+	// Larger
+	&.connection-lg {
+		max-width: 400px;
+		.connect-from,
+		.connect-to,
+		.connect-how {
+			width: 100px;
+			height: 100px;
+			border-width: $border-width *2;
+			img {
+		    	width: 90px;
+		    }
+		    i {
+			    line-height: 90px;
+			    font-size: 40px; 
+		    }
+		}
+		.connect-from {
+			border-color: $primary;
+		}
+		.connect-to {
+			border-color: $pink;
 		}
 	}
 }

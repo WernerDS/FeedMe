@@ -1,0 +1,283 @@
+﻿@{
+    ViewData["Title"] = "AutomotiveProtocol";
+}
+
+<section class="section pt-0">
+	<div class="container-fluid">
+		<div class="row mb-4">
+			<div class="col-9">
+				<h2 class="display-4">@ViewData["Title"]</h2>
+				<p class="lead">McCarthy Toyota's API - Used Vehicle Stock</p>
+			</div>
+			<div class="col-3 align-self-center text-right">
+				<a href="" class="btn btn-primary">Create a feed</a>
+			</div>
+		</div>
+		
+		<div id="searchFeed" class="mb-4">
+			<ul class="list">
+				<li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="/images/feed/toyota.svg">
+							<span class="feed-name">Used Cars</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="/images/feed/toyota.svg">
+							<span class="feed-name">New Cars</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="/images/feed/toyota.svg">
+							<span class="feed-name">Lynnwood</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="/images/feed/toyota.svg">
+							<span class="feed-name">Hatfield</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="toyotaFeed">
+						<div>
+							<img src="/images/feed/toyota.svg">
+							<span class="feed-name">Demo Cars</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div class="card">
+			<h3 class="card-header bg-white">Dealers</h3>
+			<div class="py-4">
+				<table id="MainTable" class="table table-sm table-hover">
+					<thead>
+						<tr>
+							<th>Dealer ID</th>
+							<th>Name</th>
+							<th>Brand</th>
+							<th>Location</th>
+							<th>Date Created</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>521</td>
+							<td>HINO 57-450 PROFIA (6X4) TRUCK TRACTOR</td>
+							<td>HINO</td>
+							<td>DURBAN</td>
+							<td>2007</td>
+						</tr>
+						<tr>
+							<td>533</td>
+							<td>KOBELCO CKE2500 (250 TON) CRAWLER CRANE</td>
+							<td>KOBELCO</td>
+							<td>CAPE TOWN</td>
+							<td>2006</td>
+						</tr>
+						<tr>
+							<td>534</td>
+							<td>FUSHAN (FUWA) QUY150C (150 TON) CRAWLER CRANE</td>
+							<td>FUSHAN</td>
+							<td>CAPE TOWN</td>
+							<td>2008</td>
+						</tr>
+						<tr>
+							<td>535</td>
+							<td>POTAIN GTMR386 SELF ERECTING TOWER CRANE</td>
+							<td>POTAIN</td>
+							<td>CAPE TOWN</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>536</td>
+							<td>TADANO FAUN ATF50 (50 TON) ALL TERRAIN MOBILE CRANE</td>
+							<td>TADANO</td>
+							<td>KEMPTON PARK</td>
+							<td>1999</td>
+						</tr>
+						<tr>
+							<td>560</td>
+							<td>6M3 READY MIX DRUM ON SUB FRAME</td>
+							<td>6M3 READYMIX DRUM ON SUB FRAME</td>
+							<td>OLIFANTSFONTEIN</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>593</td>
+							<td>VOGELE 1603 6-73 PAVER</td>
+							<td>VOGELE</td>
+							<td>GAUTENG</td>
+							<td>1998</td>
+						</tr>
+						<tr>
+							<td>595</td>
+							<td>SCHEID 24 TON PTR ROLLER</td>
+							<td>SCHEID</td>
+							<td>GAUTENG</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>599</td>
+							<td>MACNAY DIESEL BROOM</td>
+							<td>MACNAY</td>
+							<td>GAUTENG</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>600</td>
+							<td>MACNAY DIESEL BROOM</td>
+							<td>MACNAY</td>
+							<td>GAUTENG</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>601</td>
+							<td>MACNAY BROOM</td>
+							<td>MACNAY</td>
+							<td>GAUTENG</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>603</td>
+							<td>JCB 541-70 LOAD ALL</td>
+							<td>JCB</td>
+							<td>KEMPTON PARK</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>604</td>
+							<td>JCB 540 170 LOAD ALL</td>
+							<td>JCB</td>
+							<td>KEMPTON PARK</td>
+							<td>2016</td>
+						</tr>
+						<tr>
+							<td>605</td>
+							<td>BELL 1806C PLUS 2 LOADER</td>
+							<td>BELL</td>
+							<td>KEMPTON PARK</td>
+							<td>2006</td>
+						</tr>
+						<tr>
+							<td>613</td>
+							<td>DYNAPAC CA280D ROLLER</td>
+							<td>DYNAPAC</td>
+							<td>KEMPTON PARK</td>
+							<td>2011</td>
+						</tr>
+						<tr>
+							<td>689</td>
+							<td>MANITOU MT1740 TELESCOPIC HANDLER</td>
+							<td>MANITOU</td>
+							<td>JOHANNESBURG</td>
+							<td>2005</td>
+						</tr>
+						<tr>
+							<td>672</td>
+							<td>500 LITRE DIESEL BOWSER FORGEWELD TRAILER</td>
+							<td>500 LITRE DIESEL BOWSER FORGEWELD TRAILER</td>
+							<td>BOKSBURG</td>
+							<td>2007</td>
+						</tr>
+						<tr>
+							<td>673</td>
+							<td>KATO KR220H-ll ROUGH TERRAIN CRANE </td>
+							<td>KATO KR220H-ll ROUGH TERRAIN CRANE </td>
+							<td>JOHANNESBURG</td>
+							<td>2007</td>
+						</tr>
+						<tr>
+							<td>674</td>
+							<td>KATO KR220H-ll ROUGH TERRAIN CRANE </td>
+							<td>KATO KR220H-ll ROUGH TERRAIN CRANE </td>
+							<td>JOHANNESBURG</td>
+							<td>2007</td>
+						</tr>
+						<tr>
+							<td>675</td>
+							<td>KRUPP GMT220 ALL TERRAIN CRANE</td>
+							<td>KRUPP GMT220 ALL TERRAIN CRANE</td>
+							<td>JOHANNESBURG</td>
+							<td>1989</td>
+						</tr>
+						<tr>
+							<td>676</td>
+							<td>BOBCAT SWEEPER ATTACHMENT</td>
+							<td>BOBCAT</td>
+							<td>MIDDELBURG</td>
+							<td>2004</td>
+						</tr>
+						<tr>
+							<td>677</td>
+							<td>BOBCAT SWEEPER ATTACHMENT</td>
+							<td>BOBCAT</td>
+							<td>MIDDELBURG</td>
+							<td>2001</td>
+						</tr>
+						<tr>
+							<td>686</td>
+							<td>GROUT PUMP PLANT</td>
+							<td>STA GROUT PLANT</td>
+							<td>GAUTENG</td>
+							<td>2014</td>
+						</tr>
+						<tr>
+							<td>688</td>
+							<td>BELL 1756TL TRACTOR / HAULER</td>
+							<td>BELL</td>
+							<td>PINETOWN</td>
+							<td>2014</td>
+						</tr>
+						<tr>
+							<td>690</td>
+							<td>LANGFORD 220.5DE GENERATOR</td>
+							<td>LANGFORD</td>
+							<td>DURBAN</td>
+							<td>2014</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	
+	</div>
+</section>
+
+
+@section Scripts {
+	<script src="~/js/jquery.dataTables.min.js"></script>
+	<script src="~/js/dataTables.bootstrap4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $('#MainTable').DataTable(
+			    {
+				    "paging":   true,
+			        "ordering": true,
+			        "info":     true,
+			        "filter":   true,
+			        "aoColumns":   [
+				        { "bSortable": true },
+				        { "bSortable": true },
+				        { "bSortable": true },
+				        { "bSortable": true },
+				        { "bSortable": true }
+			        ]
+			    }
+		    );
+		});
+	</script>
+}

@@ -21,6 +21,15 @@
 	}
 }
 
+.navbar-brand {
+	font-family: $font-family-sans-serif; 
+	color: $body-color !important;
+	font-weight: bold;
+	&:hover {
+		color: $primary !important;
+	}
+}
+
 
 .navbar-nav {
 	.nav-item {
@@ -29,6 +38,7 @@
 			border-radius: $border-radius-sm;
 			//text-transform: uppercase;
 			//font-size: $font-size-sm;
+			font-weight: bold;
 			transition: $transition-base;
 			&:hover {
 				background: rgba(255, 255, 255, 0.05);
