@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Connected Accounts";
+    ViewData["Title"] = "Accounts";
 }
 
 <section class="section pt-0">
@@ -10,7 +10,7 @@
 				<p class="lead">Accounts that have permissions setup and are active.</p>
 			</div>
 			<div class="col-3 align-self-center text-right">
-				<a href="/create-feed" class="btn btn-primary">New account</a>
+				<a href="/create-account" class="btn btn-secondary">New account</a>
 			</div>
 		</div>
 		
@@ -18,19 +18,55 @@
 			<tbody>
 				<tr>
 					
-					<td width="50px"><img src="~/images/feed/toyota-badge.svg" class="img-fluid"></td>
+					<td width="50px"><img src="~/images/feed/hyundai-badge.svg" class="img-fluid"></td>
 					<td>
-						<h4><a href="/toyota-account">Britehouse</a></h4>
-						<div>Created <b>Dec 10, 2017 9:48 am</b></div>
+						<h4><a href="/hyundai-account">Hyundai Alfa CJD East Rand</a></h4>
+						<div>Created <b>Dec 15, 2017 9:17 am</b></div>
 					</td>
 					<td>
-						<div>Last requested: <b>Dec 11, 2017 11:48 am</b></div>
-						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-success">200 - Successful requests</div></div>
+						<div>Last requested: <b>Dec 15, 2017 11:48 am</b></div>
+						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-success">Great, you're connected!</div></div>
 					</td>
 					<td>
 						<div class="row">
 							<div class="col">
-								<h5><a href="javascript:void(0)">26</a></h5>
+								<h5><a href="javascript:void(0)">20</a></h5>
+								<div><i class="fa fa-user"></i> Dealers</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">178</a></h5>
+								<div><i class="fa fa-download"></i> Stock</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">1</a></h5>
+								<div><i class="fa fa-comment-alt"></i> Feeds</div>
+							</div>
+						</div>
+					</td>
+					<td></td>
+					<td class="text-right">
+						<div class="hover-show">
+							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Test Connection">Test</a>
+							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Reconnect"><i class="fa fa-plug fa-fw"></i></a>
+							<a href="javascript:void(0)" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Disconnect"><i class="fa fa-power-off fa-fw"></i></a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					
+					<td width="50px"><img src="~/images/feed/toyota-badge.svg" class="img-fluid"></td>
+					<td>
+						<h4><a href="/toyota-account">Bidvest McCarthy Toyota</a></h4>
+						<div>Created <b>Dec 10, 2017 9:48 am</b></div>
+					</td>
+					<td>
+						<div>Last requested: <b>Dec 11, 2017 11:48 am</b></div>
+						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-success">Great, you're connected!</div></div>
+					</td>
+					<td>
+						<div class="row">
+							<div class="col">
+								<h5><a href="javascript:void(0)">30</a></h5>
 								<div><i class="fa fa-user"></i> Dealers</div>
 							</div>
 							<div class="col">
@@ -54,14 +90,14 @@
 				</tr>
 				<tr>
 					
-					<td width="50px"><img src="~/images/feed/mascus-badge.svg" class="img-fluid"></td>
+					<td width="50px"><img src="~/images/feed/imperial-badge.svg" class="img-fluid"></td>
 					<td>
-						<h4><a href="javascript:void(0)">Mascus Used Vehicle</a></h4>
+						<h4><a href="/imperial-account">Imperial Auto - Honda West Rand</a></h4>
 						<div>Created <b>Aug 10, 2016 9:48 am</b></div>
 					</td>
 					<td>
 						<div>Last requested: <b>Aug 10, 2016 9:48 am</b></div>
-						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-success">200 - Successful requests</div></div>
+						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-danger">Uhrm.. something's wrong!</div></div>
 					</td>
 					<td>
 						<div class="row">
@@ -88,78 +124,7 @@
 						</div>
 					</td>
 				</tr>
-				<tr>
-					
-					<td width="50px"><img src="~/images/feed/automart-badge.svg" class="img-fluid"></td>
-					<td>
-						<h4><a href="javascript:void(0)">Auto Mart Used Vehicle</a></h4>
-						<div>Created <b>Aug 10, 2016 9:48 am</b></div>
-					</td>
-					<td>
-						<div>Last requested: <b>Aug 10, 2016 9:48 am</b></div>
-						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-warning">308 - Permanent Redirect</div></div>
-					</td>
-					<td>
-						<div class="row">
-							<div class="col">
-								<h5><a href="javascript:void(0)">3</a></h5>
-								<div><i class="fa fa-user"></i> Dealers</div>
-							</div>
-							<div class="col">
-								<h5><a href="javascript:void(0)">34</a></h5>
-								<div><i class="fa fa-download"></i> Stock</div>
-							</div>
-							<div class="col">
-								<h5><a href="javascript:void(0)">2</a></h5>
-								<div><i class="fa fa-comment-alt"></i> Feeds</div>
-							</div>
-						</div>
-					</td>
-					<td></td>
-					<td class="text-right">
-						<div class="hover-show">
-							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Test Connection">Test</a>
-							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Reconnect"><i class="fa fa-plug fa-fw"></i></a>
-							<a href="javascript:void(0)" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Disconnect"><i class="fa fa-power-off fa-fw"></i></a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					
-					<td width="50px"><img src="~/images/feed/ix-badge.svg" class="img-fluid"></td>
-					<td>
-						<h4><a href="javascript:void(0)">IX Used Vehicle</a></h4>
-						<div>Created <b>Aug 10, 2016 9:48 am</b></div>
-					</td>
-					<td>
-						<div>Last requested: <b>Aug 10, 2016 9:48 am</b></div>
-						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-danger">404 - Resource not found</div></div>
-					</td>
-					<td>
-						<div class="row">
-							<div class="col">
-								<h5><a href="javascript:void(0)">18</a></h5>
-								<div><i class="fa fa-user"></i> Dealers</div>
-							</div>
-							<div class="col">
-								<h5><a href="javascript:void(0)">34</a></h5>
-								<div><i class="fa fa-download"></i> Stock</div>
-							</div>
-							<div class="col">
-								<h5><a href="javascript:void(0)">0</a></h5>
-								<div><i class="fa fa-comment-alt"></i> Feeds</div>
-							</div>
-						</div>
-					</td>
-					<td></td>
-					<td class="text-right">
-						<div class="hover-show">
-							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Test Connection">Test</a>
-							<a href="javascript:void(0)" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Reconnect"><i class="fa fa-plug fa-fw"></i></a>
-							<a href="javascript:void(0)" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Disconnect"><i class="fa fa-power-off fa-fw"></i></a>
-						</div>
-					</td>
-				</tr>
+				
 			</tbody>
 		</table>
 		

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Service";
+    Layout = "~/Views/Shared/LayoutFullwidth.cshtml";
+}
+
+<section class="section bg-primary">
+	<div class="container-max text-white text-center">
+		<a href="" class="btn btn-outline-light float-right"><i class="fa fa-cog"></i> Settings</a>
+		<a href="/services" class="btn btn-outline-light float-left"><i class="fa fa-chevron-left"></i> Back</a>
+		<div class="row">
+			<div class="col">
+				<img src="/images/services/service-name.svg" style="max-width: 200px">
+				<h1 class="display-4 mt-4">My Service Name</h1>
+				<div class="switch-toggle-lg" id="sa-funtion">
+					<input type="checkbox" id="switch" checked /><label for="switch">Toggle</label>
+				</div>
+				<div class="mt-4"><div class="badge badge-pill badge-dark">Created Dec 15, 2017 08:48 am</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="content__inner">
+	<div class="row mb-4 shift-up">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-body text-center">
+					<div class="display-2 text-primary">30</div>
+					<h3 class="mb-0">Dealers</h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-body text-center">
+					<div class="display-2 text-primary">148</div>
+					<h3 class="mb-0">Imported Stock</h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-body text-center">
+					<div class="display-2 text-primary">0</div>
+					<h3 class="mb-0">Feeds</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section">
+		<div class="row mb-4">
+			<div class="col-md-6 mx-auto">
+				<h1 class="text-center">Service Activity</h1>
+				<ul class="activity">
+					<li>
+						<div class="bg-success"><i class="fas fa-check fa-2x text-white"></i></div>
+						<h3>Service connected</h3>
+						<p>Dec 15, 2017 14:21 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-comment-alt fa-2x"></i></div>
+						<h3>Feed requested</h3>
+						<p>Dec 15, 2017 10:32 am</p>
+					</li>
+					<li>
+						<div class="bg-danger"><i class="fas fa-plug fa-2x text-white"></i></div>
+						<h3>Service disconnected</h3>
+						<p>Dec 15, 2017 08:48 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-pencil-alt fa-2x"></i></div>
+						<h3>Service edited</h3>
+						<p>Dec 13, 2017 14:28 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-comment-alt fa-2x"></i></div>
+						<h3>Feed requested</h3>
+						<p>Dec 11, 2017 10:32 am</p>
+					</li>
+					<li>
+						<div class="bg-success"><i class="fas fa-check fa-2x text-white"></i></div>
+						<h3>Service connected</h3>
+						<p>Created Dec 10, 2017 08:48 am</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	<script src="~/js/sweetalert2.min.js"></script>
+    <script type="text/javascript">
+        // Warning Message with function
+        $('#sa-funtion').click(function(){
+            swal({
+                title: 'Are you sure?',
+                text: 'You will not be able to receive anything from imaginary feed!',
+                type: 'warning',
+                showCancelButton: true,
+                buttonsStyling: false,
+                confirmButtonClass: 'btn btn-danger',
+                confirmButtonText: 'Yes, disconnect!',
+                cancelButtonClass: 'btn btn-secondary'
+            }).then(function(){
+                swal({
+                    title: 'Your Service is disconnected!',
+                    text: 'You will not be able to receive any imaginary feeds!',
+                    type: 'success',
+                    buttonsStyling: false,
+                    confirmButtonClass: 'btn btn-secondary'
+                });
+            });
+        });
+    </script>
+}

@@ -22,9 +22,9 @@
 }
 
 .navbar-brand {
-	font-family: $font-family-sans-serif; 
+	font-family: $headings-font-family; 
 	color: $body-color !important;
-	font-weight: bold;
+	font-size: 2rem; 
 	&:hover {
 		color: $primary !important;
 	}
@@ -37,8 +37,8 @@
 		.nav-link {
 			border-radius: $border-radius-sm;
 			//text-transform: uppercase;
-			//font-size: $font-size-sm;
-			font-weight: bold;
+			font-size: 1.5rem;
+			font-family: $headings-font-family;
 			transition: $transition-base;
 			&:hover {
 				background: rgba(255, 255, 255, 0.05);
@@ -50,5 +50,8 @@
 				color: $primary;
 			}
 		}
+	}
+	.btn {
+		font-size: 1.5rem;
 	}
 }

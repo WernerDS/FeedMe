@@ -22,7 +22,7 @@ var substringMatcher = function(strs) {
 
 var feeds = ['Mascus', 'IX', 'Toyota', 'Car Find', 'Barloworld', 'Barloworld Commercial', 'Call a Car', 'Imperial Select', 'Vehicle Traders', 'Auto SLM', 'Hyundai', 'Carshop Hub', 'DealerStockControl', 'Vmg', 'Imperial Auto', 'Auto Fuzion', 'Mascus Exports', 'Dunquip', 'Autoxloo', 'IX Trucks', 'ClearAsset', 'Integra', 'IX New', 'Junk Mail', 'Gumtree', 'OLX', 'Auto Mart', 'Truck and Trailer'];
 
-$('#search-feed .typeahead').typeahead({
+$('#searchService .typeahead').typeahead({
   hint: true,
   highlight: true,
   minLength: 1

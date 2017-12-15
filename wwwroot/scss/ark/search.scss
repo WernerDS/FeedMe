@@ -56,6 +56,7 @@
 		    font-size: 1.5em;
 		    border: 4px solid $border-color;
 		    font-family: $headings-font-family;
+		    border-radius: $border-radius-lg;
 		    &:focus {
 			    box-shadow: none;
 			    border-color: $primary;
@@ -78,6 +79,7 @@
 		    background-size: 1em;
 		    border: 4px solid $border-color;
 		    font-family: $headings-font-family;
+		    border-radius: $border-radius-lg;
 		    &:focus {
 			    box-shadow: none;
 			    border-color: $primary;

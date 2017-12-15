@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Services";
+}
+
+<section class="section pt-0">
+	<div class="container-fluid">
+		<div class="row mb-4">
+			<div class="col-9">
+				<h2 class="display-4">@ViewData["Title"]</h2>
+				<p class="lead">Services that have permissions setup and are active.</p>
+			</div>
+			<div class="col-3 align-self-center text-right">
+				<a href="/search" class="btn btn-secondary">New Service</a>
+			</div>
+		</div>
+		
+		<table class="feedsTable table table-lg table-hover bg-white">
+			<tbody>
+				<tr>
+					
+					<td width="80px"><img src="~/images/services/service-name-sm.svg" class="img-fluid"></td>
+					<td>
+						<h4><a href="/service">My Service Name</a></h4>
+						<div>Created <b>Dec 15, 2017 9:17 am</b></div>
+					</td>
+					<td>
+						<div>Last requested: <b>Dec 15, 2017 10:32 am</b></div>
+						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-success">Great, you're connected!</div></div>
+					</td>
+					<td>
+						<div class="row">
+							<div class="col">
+								<h5><a href="javascript:void(0)">30</a></h5>
+								<div><i class="fa fa-user"></i> Dealers</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">148</a></h5>
+								<div><i class="fa fa-download"></i> Stock</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">0</a></h5>
+								<div><i class="fa fa-comment-alt"></i> Feeds</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					
+					<td width="80px"><img src="~/images/feed/toyota-badge.svg" class="img-fluid"></td>
+					<td>
+						<h4><a href="/service">Bidvest McCarthy Toyota</a></h4>
+						<div>Created <b>Dec 10, 2017 9:48 am</b></div>
+					</td>
+					<td>
+						<div>Last requested: <b>Dec 11, 2017 11:48 am</b></div>
+						<div class="text-truncate">Last status code: <div class="badge badge-pill badge-danger">Uhrm.. something's wrong!</div></div>
+					</td>
+					<td>
+						<div class="row">
+							<div class="col">
+								<h5><a href="javascript:void(0)">30</a></h5>
+								<div><i class="fa fa-user"></i> Dealers</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">348</a></h5>
+								<div><i class="fa fa-download"></i> Stock</div>
+							</div>
+							<div class="col">
+								<h5><a href="javascript:void(0)">2</a></h5>
+								<div><i class="fa fa-comment-alt"></i> Feeds</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+	
+	</div>
+</section>
+
+
+@section Scripts {
+
+}

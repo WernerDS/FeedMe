@@ -21,6 +21,7 @@ html,
 @import "nunito";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 // Bootstrap
@@ -61,13 +62,14 @@ html,
 @import "ark/sections";
 @import "ark/stats";
 @import "ark/steps";
+@import "ark/sweetalert2"; 
 @import "ark/tables";
 @import "ark/toggles";
 @import "ark/typography"; 
 
 // PAGES
 @import "ark/frontpage";
-@import "ark/search";
+@import "ark/services";
 @import "ark/feeds";
 @import "ark/feed-table";
 @import "ark/shuffle";

@@ -48,15 +48,15 @@ $border-radius-circle: 	50%;
 }
 
 .btn {
-	//border-color: transparent !important;
-	text-transform: uppercase;
-	//font-family: $headings-font-family;
 	will-change: box-shadow,transform;
-    font-size: $font-size-sm;
     font-weight: 600;
     border-width: 2px;
     cursor: pointer;
-    //border-radius: 3rem;
+    border-radius: 3rem;
+    font-family: $headings-font-family; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 100px;
     &:active {
 	    box-shadow: none !important;
     }
